@@ -1,0 +1,138 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.inhaleruse.v2.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- InhalerUse
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Latitude
+                                        value matches {
+                                            DV_QUANTITY[id7] matches {
+                                                property matches {[at1]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"°"}, {|>-90.0..<90.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Longitude
+                                        value matches {
+                                            DV_QUANTITY[id9] matches {
+                                                property matches {[at1]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"°"}, {|>-180.0..<180.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Time
+                                        value matches {
+                                            DV_TIME[id11] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Type of medication
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Comment
+                                        value matches {
+                                            DV_TEXT[id15] 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_bindings = <
+        ["openehr"] = <
+            ["at1"] = <http://openehr.org/id/497>
+        
+        >
+    >
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"InhalerUse">
+                description = <"InhalerUse">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Latitude">
+                description = <"Geographic coordinate that specifies the north–south position of a point on the Earth's surface.">
+            >
+            ["at1"] = <
+                text = <"Angle, plane">
+                description = <"Angle, plane">
+            >
+            ["id8"] = <
+                text = <"Longitude">
+                description = <"Geographic coordinate that specifies the east-west position of a point on the Earth's surface.">
+            >
+            ["id10"] = <
+                text = <"Time">
+                description = <"Time of action">
+            >
+            ["id12"] = <
+                text = <"Type of medication">
+                description = <"Type of asthma medication received">
+            >
+            ["at2"] = <
+                text = <"Controller">
+                description = <"Controller medication received">
+            >
+            ["at3"] = <
+                text = <"Reliever">
+                description = <"Reliever medication received">
+            >
+            ["ac1"] = <
+                text = <"Type of medication">
+                description = <"Type of asthma medication received">
+            >
+            ["id14"] = <
+                text = <"Comment">
+                description = <"Additional narrative about the use of asthma inhalers.">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at2", "at3">
+        >
+    >
+
