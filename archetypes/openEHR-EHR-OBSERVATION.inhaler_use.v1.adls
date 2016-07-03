@@ -61,6 +61,13 @@ definition
                                             DV_TEXT[id15] 
                                         }
                                     }
+                                    ELEMENT[id17] matches {    -- Competence
+                                        value matches {
+                                            DV_COUNT[id18] matches {
+                                                magnitude matches {|>0..<100|}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -125,6 +132,10 @@ terminology
             ["id14"] = <
                 text = <"Comment">
                 description = <"Additional narrative about the use of asthma inhalers.">
+            >
+            ["id17"] = <
+                text = <"Competence">
+                description = <"Level of use">
             >
         >
     >
