@@ -230,5 +230,12 @@
     "path" : "archetypes/openEHR-EHR-SECTION.medication.v1.adls",
     "sha" : "d379bcf36aa1293b122d305a3daa87b3647ada0f",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.inhaleruse.v2.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "InhalerUse",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.inhaleruse.v2.adls",
+    "sha" : "d27f4e751f3018943cb5a7a6576f656cb50b0c84",
+    "languages" : [ "en" ]
   } ]
 }
