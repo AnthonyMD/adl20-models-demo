@@ -26,7 +26,6 @@ definition
                                     ELEMENT[id6] matches {    -- Latitude
                                         value matches {
                                             DV_QUANTITY[id7] matches {
-                                                property matches {[at1]}
                                                 [units, magnitude, precision] matches {
                                                     [{"°"}, {|>-90.0..<90.0|}, {|>=0|}]
                                                 }
@@ -45,7 +44,7 @@ definition
                                     ELEMENT[id10] matches {    -- Time
                                         value matches {
                                             DV_TIME[id11] matches {
-                                                value matches {*}
+                                                value
                                             }
                                         }
                                     }
