@@ -1,0 +1,275 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.copernicus.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Record details about environmental data retrieved from Copernicus.">
+            use = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- Copernicus
+        data matches {
+            HISTORY[id2] matches {
+                events cardinality matches {0..*; unordered} matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items cardinality matches {0..*} matches {
+                                    ELEMENT[id6] matches {    -- PM1
+                                        value matches {
+                                            DV_QUANTITY[id37] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"[ppm]"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- PM2.5
+                                        value matches {
+                                            DV_QUANTITY[id38] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"[ppm]"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- PM10
+                                        value matches {
+                                            DV_QUANTITY[id39] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"[ppm]"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- NO2
+                                        value matches {
+                                            DV_QUANTITY[id40] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"[ppm]"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- SO2
+                                        value matches {
+                                            DV_QUANTITY[id41] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"[ppm]"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- CO
+                                        value matches {
+                                            DV_QUANTITY[id42] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"[ppm]"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- AERMR04
+                                        value matches {
+                                            DV_QUANTITY[id47] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] matches {    -- AERMR05
+                                        value matches {
+                                            DV_QUANTITY[id48] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id22] matches {    -- AERMR06
+                                        value matches {
+                                            DV_QUANTITY[id49] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id24] matches {    -- AERMR07
+                                        value matches {
+                                            DV_QUANTITY[id50] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id27] matches {    -- AERMR08
+                                        value matches {
+                                            DV_QUANTITY[id51] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id33] matches {    -- AERMR09
+                                        value matches {
+                                            DV_QUANTITY[id52] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id35] matches {    -- AERMR10
+                                        value matches {
+                                            DV_QUANTITY[id53] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id54] matches {    -- Temperature
+                                        value matches {
+                                            DV_QUANTITY[id58] matches {
+                                                property matches {[at4]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"°C"}, {|>-273.0..<100.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id56] matches {    -- Humidity
+                                        value matches {
+                                            DV_QUANTITY[id57] matches {
+                                                property matches {[at2]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"%"}, {|>0.0..<100.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_bindings = <
+        ["openehr"] = <
+            ["at1"] = <http://openehr.org/id/119>
+            ["at2"] = <http://openehr.org/id/507>
+            ["at3"] = <http://openehr.org/id/350>
+            ["at4"] = <http://openehr.org/id/127>
+        
+        >
+    >
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"Copernicus">
+                description = <"Copernicus">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"PM1">
+                description = <"Particulate matter d < 1um">
+            >
+            ["at1"] = <
+                text = <"Concentration">
+                description = <"Concentration">
+            >
+            ["id8"] = <
+                text = <"PM2.5">
+                description = <"Particulate matter d < 2.5 um">
+            >
+            ["id10"] = <
+                text = <"PM10">
+                description = <"Particulate matter d < 10">
+            >
+            ["id12"] = <
+                text = <"NO2">
+                description = <"Nitrogen dioxide">
+            >
+            ["id14"] = <
+                text = <"SO2">
+                description = <"Sulphur dioxide">
+            >
+            ["id16"] = <
+                text = <"CO">
+                description = <"Carbon monoxide">
+            >
+            ["id18"] = <
+                text = <"AERMR04">
+                description = <"Dust Aerosol (0.03 - 0.55 um) Mixing Ratio">
+            >
+            ["id20"] = <
+                text = <"AERMR05">
+                description = <"Dust Aerosol (0.55 - 0.9 um) Mixing Ratio">
+            >
+            ["id22"] = <
+                text = <"AERMR06">
+                description = <"Dust Aerosol (0.9 - 20 um) Mixing Ratio">
+            >
+            ["id24"] = <
+                text = <"AERMR07">
+                description = <"Hydrophobic Organic Matter Aerosol Mixing Ratio">
+            >
+            ["id27"] = <
+                text = <"AERMR08">
+                description = <"Hydrophilic Organic Matter Aerosol Mixing Ratio">
+            >
+            ["id33"] = <
+                text = <"AERMR09">
+                description = <"Hydrophobic Black Carbon Aerosol Mixing Ratio">
+            >
+            ["id35"] = <
+                text = <"AERMR10">
+                description = <"Hydrophilic Black Carbon Aerosol Mixing Ratio">
+            >
+            ["at2"] = <
+                text = <"Proportion">
+                description = <"Proportion">
+            >
+            ["at3"] = <
+                text = <"Density">
+                description = <"Density">
+            >
+            ["id54"] = <
+                text = <"Temperature">
+                description = <"Temperature in Celsius (t)">
+            >
+            ["at4"] = <
+                text = <"Temperature">
+                description = <"Temperature">
+            >
+            ["id56"] = <
+                text = <"Humidity">
+                description = <"Specific Humidity (q)">
+            >
+        >
+    >
+
