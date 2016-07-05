@@ -43,8 +43,9 @@ definition
                                     }
                                     ELEMENT[id10] matches {    -- Time
                                         value matches {
-                                            DV_TIME[id11] matches {
+                                            DV_DATE_TIME[id11] matches {
                                                 value
+                                                value matches {*}
                                             }
                                         }
                                     }
