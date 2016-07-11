@@ -231,11 +231,18 @@
     "sha" : "d379bcf36aa1293b122d305a3daa87b3647ada0f",
     "languages" : [ "en" ]
   }, {
-    "id" : "openEHR-EHR-OBSERVATION.inhaleruse.v2.0.0",
+    "id" : "openEHR-EHR-OBSERVATION.copernicus.v1.0.0",
     "rmType" : "OBSERVATION",
-    "name" : "InhalerUse",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.inhaleruse.v2.adls",
-    "sha" : "d27f4e751f3018943cb5a7a6576f656cb50b0c84",
+    "name" : "Copernicus",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.copernicus.v1.adls",
+    "sha" : "705987ad33455fb6a9634fb1c1b61d306ccbea06",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.inhaler_use.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Inhaler_Use",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.inhaler_use.v1.adls",
+    "sha" : "54634d0aedc840fc558add0c1816ccfee8b0ccbf",
     "languages" : [ "en" ]
   } ]
 }
