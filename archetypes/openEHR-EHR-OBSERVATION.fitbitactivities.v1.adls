@@ -62,6 +62,16 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] matches {    -- Sedentary Minutes
+                                        value matches {
+                                            DV_QUANTITY[id17] matches {
+                                                property matches {[at3]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|; 0.0}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -79,6 +89,7 @@ terminology
         ["openehr"] = <
             ["at1"] = <http://openehr.org/id/121>
             ["at2"] = <http://openehr.org/id/122>
+            ["at3"] = <http://openehr.org/id/128>
         
         >
     >
@@ -119,6 +130,14 @@ terminology
             ["id14"] = <
                 text = <"Floors">
                 description = <"Only returned for users who currently or have previously paired a Fitbit device with an altimeter.">
+            >
+            ["id16"] = <
+                text = <"Sedentary Minutes">
+                description = <"Total minutes the person was sitting during one day">
+            >
+            ["at3"] = <
+                text = <"Time">
+                description = <"Time">
             >
         >
     >
