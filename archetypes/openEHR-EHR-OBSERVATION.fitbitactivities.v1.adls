@@ -90,6 +90,16 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id22] matches {    -- Minutes Very Active
+                                        value matches {
+                                            DV_QUANTITY[id23] matches {
+                                                property matches {[at3]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -164,6 +174,10 @@ terminology
             ["id20"] = <
                 text = <"Minutes Fairly Active">
                 description = <"Total minutes the person was fairly active during one day.">
+            >
+            ["id22"] = <
+                text = <"Minutes Very Active">
+                description = <"Total minutes the person was very active during one day.">
             >
         >
     >
