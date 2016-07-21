@@ -62,7 +62,7 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id16] matches {    -- Sedentary Minutes
+                                    ELEMENT[id16] matches {    -- Minutes Sedentary
                                         value matches {
                                             DV_QUANTITY[id17] matches {
                                                 [units, magnitude, precision] matches {
@@ -71,7 +71,7 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id18] matches {    -- Lightly Active Minutes
+                                    ELEMENT[id18] matches {    -- Minutes Lightly Active
                                         value matches {
                                             DV_QUANTITY[id19] matches {
                                                 [units, magnitude, precision] matches {
@@ -140,7 +140,7 @@ terminology
                 description = <"Only returned for users who currently or have previously paired a Fitbit device with an altimeter.">
             >
             ["id16"] = <
-                text = <"Sedentary Minutes">
+                text = <"Minutes Sedentary">
                 description = <"Total minutes the person was sitting during one day.">
             >
             ["at3"] = <
@@ -148,7 +148,7 @@ terminology
                 description = <"Time">
             >
             ["id18"] = <
-                text = <"Lightly Active Minutes">
+                text = <"Minutes Lightly Active">
                 description = <"Total minutes the person was lightly active during one day.">
             >
         >
