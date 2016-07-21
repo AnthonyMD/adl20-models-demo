@@ -34,7 +34,7 @@ definition
                                         value matches {
                                             DV_QUANTITY[id9] matches {
                                                 [units, magnitude, precision] matches {
-                                                    [{"cal"}, {|>=0.0|; 0.0}, {|>=0|}]
+                                                    [{"cal"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
@@ -42,7 +42,7 @@ definition
                                     ELEMENT[id10] matches {    -- Steps
                                         value matches {
                                             DV_COUNT[id11] matches {
-                                                magnitude matches {|>=0|;0}
+                                                magnitude matches {|>=0|}
                                             }
                                         }
                                     }
@@ -50,7 +50,7 @@ definition
                                         value matches {
                                             DV_QUANTITY[id13] matches {
                                                 [units, magnitude, precision] matches {
-                                                    [{"m"}, {|>=0.0|; 0.0}, {|>=0|}]
+                                                    [{"m"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
@@ -58,7 +58,7 @@ definition
                                     ELEMENT[id14] matches {    -- Floors
                                         value matches {
                                             DV_COUNT[id15] matches {
-                                                magnitude matches {|>=0|;0}
+                                                magnitude matches {|>=0|}
                                             }
                                         }
                                     }
