@@ -57,6 +57,7 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14]     -- Floors
                                 }
                             }
                         }
@@ -110,6 +111,10 @@ terminology
             ["at2"] = <
                 text = <"Length">
                 description = <"Length">
+            >
+            ["id14"] = <
+                text = <"Floors">
+                description = <"Only returned for users who currently or have previously paired a Fitbit device with an altimeter.">
             >
         >
     >
