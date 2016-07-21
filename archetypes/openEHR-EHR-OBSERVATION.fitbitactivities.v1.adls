@@ -147,7 +147,7 @@ terminology
             >
             ["id8"] = <
                 text = <"Calories Burned">
-                description = <"Amount of calories burned, inclusive of Basal Metabolic Rate (BMR), tracked activity, and manually logged activities, during a single day.">
+                description = <"Amount of calories burned, inclusive of Basal Metabolic Rate (BMR), according to movement captured by a Fitbit tracker, during a single day.">
             >
             ["at1"] = <
                 text = <"Energy">
@@ -191,7 +191,7 @@ terminology
             >
             ["id24"] = <
                 text = <"Activity Calories">
-                description = <"Amount of calories burned, only Basal Metabolic Rate (BMR), during a single day.">
+                description = <"Amount of calories burned during the day for periods of time when the user was active above sedentary level. Includes  Basal Metabolic Rate (BMR) for those periods as well as activity burned calories. Uses only tracker data. Excludes manually logged activities.">
             >
         >
     >
