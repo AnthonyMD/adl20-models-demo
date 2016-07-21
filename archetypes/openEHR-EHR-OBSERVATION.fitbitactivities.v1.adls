@@ -100,6 +100,16 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id24] matches {    -- Activity Calories
+                                        value matches {
+                                            DV_QUANTITY[id25] matches {
+                                                property matches {[at1]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"cal"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -137,7 +147,7 @@ terminology
             >
             ["id8"] = <
                 text = <"Calories Burned">
-                description = <"Amount of calories burned during a single day.">
+                description = <"Amount of calories burned, inclusive of Basal Metabolic Rate (BMR), tracked activity, and manually logged activities, during a single day.">
             >
             ["at1"] = <
                 text = <"Energy">
@@ -178,6 +188,10 @@ terminology
             ["id22"] = <
                 text = <"Minutes Very Active">
                 description = <"Total minutes the person was very active during one day.">
+            >
+            ["id24"] = <
+                text = <"Activity Calories">
+                description = <"Amount of calories burned, only Basal Metabolic Rate (BMR), during a single day.">
             >
         >
     >
