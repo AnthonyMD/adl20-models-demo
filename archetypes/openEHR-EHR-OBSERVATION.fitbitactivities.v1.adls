@@ -50,7 +50,7 @@ definition
                                         value matches {
                                             DV_QUANTITY[id13] matches {
                                                 [units, magnitude, precision] matches {
-                                                    [{"m"}, {|>0.0|}, {|>=0|}]
+                                                    [{"m"}, {|>=0.0|; 0.0}, {|>=0|}]
                                                 }
                                             }
                                         }
