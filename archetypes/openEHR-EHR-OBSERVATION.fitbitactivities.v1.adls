@@ -72,6 +72,15 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id18] matches {    -- Lightly Active Minutes
+                                        value matches {
+                                            DV_QUANTITY[id19] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|; 0.0}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -133,11 +142,15 @@ terminology
             >
             ["id16"] = <
                 text = <"Sedentary Minutes">
-                description = <"Total minutes the person was sitting during one day">
+                description = <"Total minutes the person was sitting during one day.">
             >
             ["at3"] = <
                 text = <"Time">
                 description = <"Time">
+            >
+            ["id18"] = <
+                text = <"Lightly Active Minutes">
+                description = <"Total minutes the person was lightly active during one day.">
             >
         >
     >
