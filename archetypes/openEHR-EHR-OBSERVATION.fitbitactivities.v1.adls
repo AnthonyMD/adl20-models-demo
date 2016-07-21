@@ -47,6 +47,16 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] matches {    -- Distance
+                                        value matches {
+                                            DV_QUANTITY[id13] matches {
+                                                property matches {[at2]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"m"}, {|>-1.0|; 0.0}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -63,6 +73,7 @@ terminology
     term_bindings = <
         ["openehr"] = <
             ["at1"] = <http://openehr.org/id/121>
+            ["at2"] = <http://openehr.org/id/122>
         
         >
     >
@@ -91,6 +102,14 @@ terminology
             ["id10"] = <
                 text = <"Steps">
                 description = <"Number of steps taken during one day's activities.">
+            >
+            ["id12"] = <
+                text = <"Distance">
+                description = <"Distance covered during one day's activities.">
+            >
+            ["at2"] = <
+                text = <"Length">
+                description = <"Length">
             >
         >
     >
