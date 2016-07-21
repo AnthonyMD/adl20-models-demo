@@ -33,9 +33,8 @@ definition
                                     ELEMENT[id8] matches {    -- Calories Burned
                                         value matches {
                                             DV_QUANTITY[id9] matches {
-                                                property matches {[at1]}
                                                 [units, magnitude, precision] matches {
-                                                    [{"cal"}, {|>-1.0|; 0.0}, {|>=0|}]
+                                                    [{"cal"}, {|>0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
@@ -43,7 +42,7 @@ definition
                                     ELEMENT[id10] matches {    -- Steps
                                         value matches {
                                             DV_COUNT[id11] matches {
-                                                magnitude matches {|>-1|;0}
+                                                magnitude matches {|>0|}
                                             }
                                         }
                                     }
