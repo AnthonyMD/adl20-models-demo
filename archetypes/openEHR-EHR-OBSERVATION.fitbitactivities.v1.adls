@@ -65,9 +65,8 @@ definition
                                     ELEMENT[id16] matches {    -- Sedentary Minutes
                                         value matches {
                                             DV_QUANTITY[id17] matches {
-                                                property matches {[at3]}
                                                 [units, magnitude, precision] matches {
-                                                    [{"min"}, {|>=0.0|; 0.0}, {|>=0|}]
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
@@ -76,7 +75,7 @@ definition
                                         value matches {
                                             DV_QUANTITY[id19] matches {
                                                 [units, magnitude, precision] matches {
-                                                    [{"min"}, {|>=0.0|; 0.0}, {|>=0|}]
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
