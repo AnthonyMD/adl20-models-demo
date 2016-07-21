@@ -55,6 +55,16 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] matches {    -- Calories In
+                                        value matches {
+                                            DV_QUANTITY[id13] matches {
+                                                property matches {[at3]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"cal"}, {|>0.0|; 1.0}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -72,6 +82,7 @@ terminology
         ["openehr"] = <
             ["at1"] = <http://openehr.org/id/124>
             ["at2"] = <http://openehr.org/id/349>
+            ["at3"] = <http://openehr.org/id/121>
         
         >
     >
@@ -104,6 +115,14 @@ terminology
             ["at2"] = <
                 text = <"Mass per Area">
                 description = <"Mass per Area">
+            >
+            ["id12"] = <
+                text = <"Calories In">
+                description = <"Calories Consumed (Foods)">
+            >
+            ["at3"] = <
+                text = <"Energy">
+                description = <"Energy">
             >
         >
     >
