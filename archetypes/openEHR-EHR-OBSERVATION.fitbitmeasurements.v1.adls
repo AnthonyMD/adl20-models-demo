@@ -29,7 +29,33 @@ definition
                     EVENT[id3] matches {    -- Any event
                         data matches {
                             ITEM_TREE[id4] matches {
-                                items
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Date
+                                        value matches {
+                                            DV_DATE[id7] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Weight
+                                        value matches {
+                                            DV_QUANTITY[id9] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- BMI
+                                        value matches {
+                                            DV_QUANTITY[id11] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m2"}, {|>0.0..<100.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                         state matches {
@@ -42,6 +68,13 @@ definition
     }
 
 terminology
+    term_bindings = <
+        ["openehr"] = <
+            ["at1"] = <http://openehr.org/id/124>
+            ["at2"] = <http://openehr.org/id/349>
+        
+        >
+    >
     term_definitions = <
         ["en"] = <
             ["id1"] = <
@@ -51,6 +84,26 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Date">
+                description = <"Date of measurement">
+            >
+            ["id8"] = <
+                text = <"Weight">
+                description = <"Weight measurement">
+            >
+            ["at1"] = <
+                text = <"Mass">
+                description = <"Mass">
+            >
+            ["id10"] = <
+                text = <"BMI">
+                description = <"The Body Mass Index (BMI) is defined as the body mass divided by the square of the body height.">
+            >
+            ["at2"] = <
+                text = <"Mass per Area">
+                description = <"Mass per Area">
             >
         >
     >
