@@ -49,9 +49,8 @@ definition
                                     ELEMENT[id12] matches {    -- Distance
                                         value matches {
                                             DV_QUANTITY[id13] matches {
-                                                property matches {[at2]}
                                                 [units, magnitude, precision] matches {
-                                                    [{"m"}, {|>-1.0|; 0.0}, {|>=0|}]
+                                                    [{"m"}, {|>0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
