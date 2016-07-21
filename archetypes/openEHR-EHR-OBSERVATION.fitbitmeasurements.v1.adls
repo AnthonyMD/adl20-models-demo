@@ -60,7 +60,7 @@ definition
                                             DV_QUANTITY[id13] matches {
                                                 property matches {[at3]}
                                                 [units, magnitude, precision] matches {
-                                                    [{"cal"}, {|>0.0|; 1.0}, {|>=0|}]
+                                                    [{"cal"}, {|>-1.0|; 0.0}, {|>=0|}]
                                                 }
                                             }
                                         }
