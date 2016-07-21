@@ -57,7 +57,13 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id14]     -- Floors
+                                    ELEMENT[id14] matches {    -- Floors
+                                        value matches {
+                                            DV_COUNT[id15] matches {
+                                                magnitude matches {|>-1|;0}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
