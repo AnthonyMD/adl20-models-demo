@@ -8,11 +8,18 @@ description
     copyright = <"">
     details = <
         ["en"] = <
+            keywords = <"Fitbit", "Activities">
             language = <[ISO_639-1::en]>
-            purpose = <"">
+            misuse = <"">
+            purpose = <"Records data, referring to a person's activities during one day, obtained from Fitbit tracker.">
+            use = <"Use to record data obtained from Fitbit tracker. Data referring to a person's activities during one day.">
         >
     >
     lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Antonios Voulgaridis">
+        ["organization"] = <"CERTH">
+    >
 
 definition
     OBSERVATION[id1] matches {    -- fitbitactivities
@@ -26,7 +33,7 @@ definition
                                     ELEMENT[id6] matches {    -- Date
                                         value matches {
                                             DV_DATE[id7] matches {
-                                                value matches {*}
+                                                value
                                             }
                                         }
                                     }
