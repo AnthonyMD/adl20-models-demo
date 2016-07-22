@@ -142,7 +142,7 @@ terminology
         ["en"] = <
             ["id1"] = <
                 text = <"fitbitactivities">
-                description = <"fitbitactivities">
+                description = <"Activities measurements obtained from Fitbit.">
             >
             ["id3"] = <
                 text = <"Any event">
@@ -150,7 +150,7 @@ terminology
             >
             ["id6"] = <
                 text = <"Date">
-                description = <"Date of measurement">
+                description = <"Date of measurements.">
             >
             ["id8"] = <
                 text = <"Calories Burned">
