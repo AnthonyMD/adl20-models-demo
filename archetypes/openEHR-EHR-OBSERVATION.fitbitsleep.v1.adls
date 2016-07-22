@@ -132,7 +132,7 @@ terminology
             >
             ["id6"] = <
                 text = <"Start time">
-                description = <"Start time of sleep">
+                description = <"Start time of sleep.">
             >
             ["id8"] = <
                 text = <"Time in bed">
@@ -148,7 +148,7 @@ terminology
             >
             ["id12"] = <
                 text = <"Awakenings Count">
-                description = <"Count of awakenings from sleep during one day.">
+                description = <"Count of awakenings from sleep.">
             >
             ["id14"] = <
                 text = <"Minutes Awake">
