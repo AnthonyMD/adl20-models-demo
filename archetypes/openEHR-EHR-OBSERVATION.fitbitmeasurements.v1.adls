@@ -11,8 +11,8 @@ description
             keywords = <"Fitbit", "Body", "Weight", "BMI", "Calories", "Food">
             language = <[ISO_639-1::en]>
             misuse = <"">
-            purpose = <"Records data about body measurements, obtained from Fitbit.">
-            use = <"Use to record data about body measurements, obtained from Fitbit. ">
+            purpose = <"Records data, referring to a person's body measurements, obtained from Fitbit.">
+            use = <"Use to record data obtained from Fitbit. Data referring to a person's body measurements.">
         >
     >
     lifecycle_state = <"unmanaged">
