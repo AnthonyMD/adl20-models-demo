@@ -90,7 +90,7 @@ terminology
         ["en"] = <
             ["id1"] = <
                 text = <"FitbitMeasurements">
-                description = <"FitbitMeasurements">
+                description = <"Body measurements obtained from fitbit.">
             >
             ["id3"] = <
                 text = <"Any event">
