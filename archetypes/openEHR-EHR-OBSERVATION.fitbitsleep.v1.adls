@@ -8,11 +8,11 @@ description
     copyright = <"">
     details = <
         ["en"] = <
-            keywords = <"fitbit">
+            keywords = <"Fitbit", "Sleep">
             language = <[ISO_639-1::en]>
             misuse = <"">
             purpose = <"Records data, referring to a person's sleeping period during one day, obtained from Fitbit.">
-            use = <"Uses data obtained from Fitbit. Data referring to a person's sleeping period during one day.">
+            use = <"Use to record data obtained from Fitbit. Data referring to a person's sleeping period during one day.">
         >
     >
     lifecycle_state = <"unmanaged">
