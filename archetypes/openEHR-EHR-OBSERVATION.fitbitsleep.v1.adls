@@ -16,6 +16,10 @@ description
         >
     >
     lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Antonios Voulgaridis">
+        ["organization"] = <"CERTH">
+    >
 
 definition
     OBSERVATION[id1] matches {    -- fitbitsleep
