@@ -8,7 +8,7 @@ description
     copyright = <"">
     details = <
         ["en"] = <
-            keywords = <"Fitbit", "Body", "Food", "Activities", "Sleep", "Heart", "Blood Pressure", "Glucose">
+            keywords = <"Fitbit", "Body", "Weight", "BMI", "Calories">
             language = <[ISO_639-1::en]>
             misuse = <"">
             purpose = <"Records data obtained from Fitbit.">
@@ -33,7 +33,7 @@ definition
                                     ELEMENT[id6] matches {    -- Date
                                         value matches {
                                             DV_DATE[id7] matches {
-                                                value matches {*}
+                                                value
                                             }
                                         }
                                     }
