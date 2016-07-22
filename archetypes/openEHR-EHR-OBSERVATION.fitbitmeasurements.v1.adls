@@ -41,7 +41,7 @@ definition
                                         value matches {
                                             DV_QUANTITY[id9] matches {
                                                 [units, magnitude, precision] matches {
-                                                    [{"kg"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                    [{"kg"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
@@ -50,7 +50,7 @@ definition
                                         value matches {
                                             DV_QUANTITY[id11] matches {
                                                 [units, magnitude, precision] matches {
-                                                    [{"kg/m2"}, {|>0.0..<100.0|}, {|>=0|}]
+                                                    [{"kg/m2"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
@@ -58,9 +58,8 @@ definition
                                     ELEMENT[id12] matches {    -- Calories In
                                         value matches {
                                             DV_QUANTITY[id13] matches {
-                                                property matches {[at3]}
                                                 [units, magnitude, precision] matches {
-                                                    [{"cal"}, {|>-1.0|; 0.0}, {|>=0|}]
+                                                    [{"cal"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
