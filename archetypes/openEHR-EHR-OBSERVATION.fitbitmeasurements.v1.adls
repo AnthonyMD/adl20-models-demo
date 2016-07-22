@@ -97,11 +97,11 @@ terminology
             >
             ["id6"] = <
                 text = <"Date">
-                description = <"Date of measurement">
+                description = <"Date of measurement.">
             >
             ["id8"] = <
                 text = <"Weight">
-                description = <"Weight measurement">
+                description = <"Weight measurement.">
             >
             ["at1"] = <
                 text = <"Mass">
@@ -117,7 +117,7 @@ terminology
             >
             ["id12"] = <
                 text = <"Calories In">
-                description = <"Calories Consumed (Foods)">
+                description = <"Calories Consumed in one day (Foods).">
             >
             ["at3"] = <
                 text = <"Energy">
