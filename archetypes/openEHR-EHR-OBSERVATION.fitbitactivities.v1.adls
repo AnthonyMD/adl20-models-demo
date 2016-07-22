@@ -8,7 +8,7 @@ description
     copyright = <"">
     details = <
         ["en"] = <
-            keywords = <"Fitbit", "Activities">
+            keywords = <"Fitbit", "Activities", "Calories", "BMR", "Steps", "Floors", "Minutes", "Distance">
             language = <[ISO_639-1::en]>
             misuse = <"">
             purpose = <"Records data, referring to a person's activities during one day, obtained from Fitbit tracker.">
