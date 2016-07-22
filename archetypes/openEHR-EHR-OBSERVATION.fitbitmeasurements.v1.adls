@@ -34,6 +34,7 @@ definition
                                         value matches {
                                             DV_DATE[id7] matches {
                                                 value
+                                                value matches {*}
                                             }
                                         }
                                     }
