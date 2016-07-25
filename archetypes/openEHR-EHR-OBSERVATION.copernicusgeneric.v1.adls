@@ -8,8 +8,11 @@ description
     copyright = <"">
     details = <
         ["en"] = <
+            keywords = <"Copernicus", "Environmental", "Surface", "Pressure">
             language = <[ISO_639-1::en]>
-            purpose = <"">
+            misuse = <"">
+            purpose = <"Records environmental data, referring to surface and pressure parameters, obtained from Copernicus.">
+            use = <"Use to record environmental data obtained from Copernicus. Data referring to surface and pressure parameters for a certain period of time during one day.">
         >
     >
     lifecycle_state = <"unmanaged">
