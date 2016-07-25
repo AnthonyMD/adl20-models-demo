@@ -24,7 +24,7 @@ definition
                     EVENT[id3] matches {    -- Any event
                         data matches {
                             ITEM_TREE[id4] matches {
-                                items cardinality matches {0..*} matches {
+                                items cardinality matches {0..*; unordered} matches {
                                     ELEMENT[id6] matches {    -- PM1
                                         value matches {
                                             DV_QUANTITY[id37] matches {
