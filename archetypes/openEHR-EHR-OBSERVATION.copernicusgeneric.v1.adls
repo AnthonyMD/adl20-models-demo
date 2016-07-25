@@ -13,6 +13,10 @@ description
         >
     >
     lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Antonios Voulgaridis">
+        ["organization"] = <"CERTH">
+    >
 
 definition
     OBSERVATION[id1] matches {    -- CopernicusGeneric
@@ -60,25 +64,21 @@ definition
                                     ELEMENT[id14] matches {    -- Value
                                         value matches {
                                             DV_QUANTITY[id15] matches {
-                                                property matches {[at17]}
                                                 [units, magnitude, precision] matches {
                                                     [{"kg/m3"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                             DV_QUANTITY[id16] matches {
-                                                property matches {[at18]}
                                                 [units, magnitude, precision] matches {
                                                     [{"°C"}, {|>=-273.0|}, {|>=0|}]
                                                 }
                                             }
                                             DV_QUANTITY[id17] matches {
-                                                property matches {[at19]}
                                                 [units, magnitude, precision] matches {
-                                                    [{"%"}, {|>=0.0|}, {|>=0|}]
+                                                    [{"%"}, {|0.0..100.0|}, {|>=0|}]
                                                 }
                                             }
                                             DV_QUANTITY[id18] matches {
-                                                property matches {[at19]}
                                                 [units, magnitude, precision] matches {
                                                     [{"[ppm]"}, {|>=0.0|}, {|>=0|}]
                                                 }
@@ -111,7 +111,7 @@ terminology
         ["en"] = <
             ["id1"] = <
                 text = <"CopernicusGeneric">
-                description = <"CopernicusGeneric">
+                description = <"Environmental measurements obtained from Copernicus.">
             >
             ["id3"] = <
                 text = <"Any event">
