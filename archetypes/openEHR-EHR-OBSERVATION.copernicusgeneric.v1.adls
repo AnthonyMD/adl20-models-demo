@@ -57,6 +57,34 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14] matches {    -- Value
+                                        value matches {
+                                            DV_QUANTITY[id15] matches {
+                                                property matches {[at17]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m3"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                            DV_QUANTITY[id16] matches {
+                                                property matches {[at18]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"°C"}, {|>=-273.0|}, {|>=0|}]
+                                                }
+                                            }
+                                            DV_QUANTITY[id17] matches {
+                                                property matches {[at19]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"%"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                            DV_QUANTITY[id18] matches {
+                                                property matches {[at19]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"[ppm]"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -73,6 +101,9 @@ terminology
     term_bindings = <
         ["openehr"] = <
             ["at1"] = <http://openehr.org/id/497>
+            ["at17"] = <http://openehr.org/id/350>
+            ["at18"] = <http://openehr.org/id/127>
+            ["at19"] = <http://openehr.org/id/507>
         
         >
     >
@@ -169,6 +200,22 @@ terminology
             ["ac1"] = <
                 text = <"Type of Measurement">
                 description = <"Type of measurement including forecast for surface and pressure parameters.">
+            >
+            ["id14"] = <
+                text = <"Value">
+                description = <"Value of a specific measurement.">
+            >
+            ["at17"] = <
+                text = <"Density">
+                description = <"Density">
+            >
+            ["at18"] = <
+                text = <"Temperature">
+                description = <"Temperature">
+            >
+            ["at19"] = <
+                text = <"Proportion">
+                description = <"Proportion">
             >
         >
     >
