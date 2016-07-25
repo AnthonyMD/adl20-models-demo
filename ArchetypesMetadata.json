@@ -244,5 +244,26 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.inhaler_use.v1.adls",
     "sha" : "54634d0aedc840fc558add0c1816ccfee8b0ccbf",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.fitbitactivities.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "fitbitactivities",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.fitbitactivities.v1.adls",
+    "sha" : "3243fcaf8fa90d13c939ec12358794de098d1504",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.fitbitmeasurements.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "FitbitMeasurements",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.fitbitmeasurements.v1.adls",
+    "sha" : "f9d878704eb58c056324ffbadaaec3a982c9b811",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.fitbitsleep.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "fitbitsleep",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.fitbitsleep.v1.adls",
+    "sha" : "ddf18377745c8dc7c3e283d01546f66652699292",
+    "languages" : [ "en" ]
   } ]
 }
