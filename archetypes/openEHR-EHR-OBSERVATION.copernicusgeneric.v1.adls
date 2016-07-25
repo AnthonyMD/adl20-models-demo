@@ -50,7 +50,13 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id12]     -- Type of Measurement
+                                    ELEMENT[id12] matches {    -- Type of Measurement
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -100,6 +106,76 @@ terminology
                 text = <"Type of Measurement">
                 description = <"Type of measurement including forecast for surface parameters (pm1, pm2p5, pm10, humidity, temperature) and forecast for pressure level parameters (NO2, SO2, CO, AERMR04, AERMR05, AERMR06, AERMR07, AERMR08, AERMR09, AERMR10)">
             >
+            ["at2"] = <
+                text = <"PM1">
+                description = <"Particulate matter d < 1um.">
+            >
+            ["at3"] = <
+                text = <"PM2.5">
+                description = <"Particulate matter d < 2.5 um.">
+            >
+            ["at4"] = <
+                text = <"PM10">
+                description = <"Particulate matter d < 10.">
+            >
+            ["at5"] = <
+                text = <"NO2">
+                description = <"Nitrogen dioxide.">
+            >
+            ["at6"] = <
+                text = <"SO2">
+                description = <"Sulphur dioxide.">
+            >
+            ["at7"] = <
+                text = <"CO">
+                description = <"Carbon monoxide.">
+            >
+            ["at8"] = <
+                text = <"AERMR04">
+                description = <"Dust Aerosol (0.03 - 0.55 um) Mixing Ratio.">
+            >
+            ["at9"] = <
+                text = <"AERMR05">
+                description = <"Dust Aerosol (0.55 - 0.9 um) Mixing Ratio.">
+            >
+            ["at10"] = <
+                text = <"AERMR06">
+                description = <"Dust Aerosol (0.9 - 20 um) Mixing Ratio.">
+            >
+            ["at11"] = <
+                text = <"AERMR07">
+                description = <"Hydrophobic Organic Matter Aerosol Mixing Ratio.">
+            >
+            ["at12"] = <
+                text = <"AERMR08">
+                description = <"Hydrophilic Organic Matter Aerosol Mixing Ratio.">
+            >
+            ["at13"] = <
+                text = <"AERMR09">
+                description = <"Hydrophobic Black Carbon Aerosol Mixing Ratio.">
+            >
+            ["at14"] = <
+                text = <"AERMR10">
+                description = <"Hydrophilic Black Carbon Aerosol Mixing Ratio.">
+            >
+            ["at15"] = <
+                text = <"Temperature">
+                description = <"Temperature in Celsius (t).">
+            >
+            ["at16"] = <
+                text = <"Humidity">
+                description = <"Specific Humidity (q).">
+            >
+            ["ac1"] = <
+                text = <"Type of Measurement">
+                description = <"Type of measurement including forecast for surface and pressure parameters.">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at2", "at3", "at4", "at5", "at6", "at7", "at8", "at9", "at10", "at11", "at12", "at13", "at14", "at15", "at16">
         >
     >
 
