@@ -178,6 +178,50 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id39] matches {    -- Awakenings Count
+                                        value matches {
+                                            DV_COUNT[id40] matches {
+                                                magnitude matches {|>=0|}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id41] matches {    -- Minutes Awake
+                                        value matches {
+                                            DV_QUANTITY[id42] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id43] matches {    -- Minutes to fall asleep
+                                        value matches {
+                                            DV_QUANTITY[id44] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id45] matches {    -- Minutes After Wake Up
+                                        value matches {
+                                            DV_QUANTITY[id46] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id47] matches {    -- Efficiency
+                                        value matches {
+                                            DV_COUNT[id48] matches {
+                                                magnitude matches {|>=0|}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -294,6 +338,26 @@ terminology
             ["id37"] = <
                 text = <"Minutes Asleep">
                 description = <"Minutes spent asleep.">
+            >
+            ["id39"] = <
+                text = <"Awakenings Count">
+                description = <"Count of awakenings from sleep.">
+            >
+            ["id41"] = <
+                text = <"Minutes Awake">
+                description = <"Minutes spent in bed while awake.">
+            >
+            ["id43"] = <
+                text = <"Minutes to fall asleep">
+                description = <"Minutes spent in bed until fall asleep.">
+            >
+            ["id45"] = <
+                text = <"Minutes After Wake Up">
+                description = <"Minutes spent in bed after wake up.">
+            >
+            ["id47"] = <
+                text = <"Efficiency">
+                description = <"Sleep efficiency. Calculated as follows: 100 * time asleep / (time asleep + time restless + time awoken during sleep).">
             >
         >
     >
