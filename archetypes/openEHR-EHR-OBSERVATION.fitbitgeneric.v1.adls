@@ -29,7 +29,15 @@ definition
                     EVENT[id3] matches {    -- Any event
                         data matches {
                             ITEM_TREE[id4] matches {
-                                items cardinality matches {0..*; unordered}
+                                items cardinality matches {0..*; unordered} matches {
+                                    ELEMENT[id6] matches {    -- Date/Time
+                                        value matches {
+                                            DV_DATE_TIME[id7] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                         state matches {
@@ -46,11 +54,15 @@ terminology
         ["en"] = <
             ["id1"] = <
                 text = <"fitbitgeneric">
-                description = <"fitbitgeneric">
+                description = <"Data obtained from Fitbit.">
             >
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Date/Time">
+                description = <"Date and time of measurement.">
             >
         >
     >
