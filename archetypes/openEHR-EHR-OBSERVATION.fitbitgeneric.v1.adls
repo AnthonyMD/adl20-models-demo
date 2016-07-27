@@ -37,6 +37,120 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Weight
+                                        value matches {
+                                            DV_QUANTITY[id9] matches {
+                                                property matches {[at1]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- BMI
+                                        value matches {
+                                            DV_QUANTITY[id11] matches {
+                                                property matches {[at2]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m2"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Calories In
+                                        value matches {
+                                            DV_QUANTITY[id13] matches {
+                                                property matches {[at3]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"cal"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Calories Burned
+                                        value matches {
+                                            DV_QUANTITY[id15] matches {
+                                                property matches {[at3]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"cal"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- Steps
+                                        value matches {
+                                            DV_COUNT[id17] matches {
+                                                magnitude matches {|>=0|}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- Distance
+                                        value matches {
+                                            DV_QUANTITY[id19] matches {
+                                                property matches {[at4]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"m"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] matches {    -- Floors
+                                        value matches {
+                                            DV_COUNT[id21] matches {
+                                                magnitude matches {|>=0|}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id23] matches {    -- Minutes Sedentary
+                                        value matches {
+                                            DV_QUANTITY[id24] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id25] matches {    -- Minutes Lightly Active
+                                        value matches {
+                                            DV_QUANTITY[id26] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id27] matches {    -- Minutes Fairly Active
+                                        value matches {
+                                            DV_QUANTITY[id28] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id29] matches {    -- Minutes Very Active
+                                        value matches {
+                                            DV_QUANTITY[id30] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id31] matches {    -- Activity Calories
+                                        value matches {
+                                            DV_QUANTITY[id32] matches {
+                                                property matches {[at3]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"cal"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -50,6 +164,16 @@ definition
     }
 
 terminology
+    term_bindings = <
+        ["openehr"] = <
+            ["at1"] = <http://openehr.org/id/124>
+            ["at2"] = <http://openehr.org/id/349>
+            ["at3"] = <http://openehr.org/id/121>
+            ["at4"] = <http://openehr.org/id/122>
+            ["at5"] = <http://openehr.org/id/128>
+        
+        >
+    >
     term_definitions = <
         ["en"] = <
             ["id1"] = <
@@ -63,6 +187,74 @@ terminology
             ["id6"] = <
                 text = <"Date/Time">
                 description = <"Date and time of measurement.">
+            >
+            ["id8"] = <
+                text = <"Weight">
+                description = <"Weight measurement.">
+            >
+            ["at1"] = <
+                text = <"Mass">
+                description = <"Mass">
+            >
+            ["id10"] = <
+                text = <"BMI">
+                description = <"The Body Mass Index (BMI) is defined as the body mass divided by the square of the body height.">
+            >
+            ["at2"] = <
+                text = <"Mass per Area">
+                description = <"Mass per Area">
+            >
+            ["id12"] = <
+                text = <"Calories In">
+                description = <"Calories consumed in one day (Food).">
+            >
+            ["at3"] = <
+                text = <"Energy">
+                description = <"Energy">
+            >
+            ["id14"] = <
+                text = <"Calories Burned">
+                description = <"Amount of calories burned, inclusive of Basal Metabolic Rate (BMR), according to movement captured by a Fitbit tracker, during a single day.">
+            >
+            ["id16"] = <
+                text = <"Steps">
+                description = <"Number of steps taken during one day's activities.">
+            >
+            ["id18"] = <
+                text = <"Distance">
+                description = <"Distance covered during one day's activities.">
+            >
+            ["at4"] = <
+                text = <"Length">
+                description = <"Length">
+            >
+            ["id20"] = <
+                text = <"Floors">
+                description = <"Only returned for users who currently or have previously paired a Fitbit device with an altimeter.">
+            >
+            ["id23"] = <
+                text = <"Minutes Sedentary">
+                description = <"Total minutes the person was sitting during one day.">
+            >
+            ["at5"] = <
+                text = <"Time">
+                description = <"Time">
+            >
+            ["id25"] = <
+                text = <"Minutes Lightly Active">
+                description = <"Total minutes the person was lightly active during one day.">
+            >
+            ["id27"] = <
+                text = <"Minutes Fairly Active">
+                description = <"Total minutes the person was fairly active during one day.">
+            >
+            ["id29"] = <
+                text = <"Minutes Very Active">
+                description = <"Total minutes the person was very active during one day.">
+            >
+            ["id31"] = <
+                text = <"Activity Calories">
+                description = <"Amount of calories burned during the day for periods of time when the user was active above sedentary level. Includes  Basal Metabolic Rate (BMR) for those periods as well as activity burned calories. Uses only tracker data. Excludes manually logged activities.">
             >
         >
     >
