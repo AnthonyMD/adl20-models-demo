@@ -1,0 +1,57 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.fitbitgeneric.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            keywords = <"Fitbit", "Body", "Weight", "BMI", "Calories", "Food", "Activities", "BMR", "Steps", "Floors", "Minutes", "Distance", "Sleep">
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Records data, referring to a person's body measurements, physical activities and sleeping period, obtained from Fitbit.">
+            use = <"Use to record data obtained from Fitbit. Data referring to a person's body measurements, physical activities and sleeping period.">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Antonios Voulgaridis">
+        ["organization"] = <"CERTH">
+    >
+
+definition
+    OBSERVATION[id1] matches {    -- fitbitgeneric
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items cardinality matches {0..*; unordered}
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"fitbitgeneric">
+                description = <"fitbitgeneric">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+        >
+    >
+
