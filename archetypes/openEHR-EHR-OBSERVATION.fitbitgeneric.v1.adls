@@ -151,6 +151,33 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id33] matches {    -- Start time
+                                        value matches {
+                                            DV_TIME[id34] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id35] matches {    -- Time in bed
+                                        value matches {
+                                            DV_QUANTITY[id36] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"millisec"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id37] matches {    -- Minutes Asleep
+                                        value matches {
+                                            DV_QUANTITY[id38] matches {
+                                                property matches {[at5]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -255,6 +282,18 @@ terminology
             ["id31"] = <
                 text = <"Activity Calories">
                 description = <"Amount of calories burned during the day for periods of time when the user was active above sedentary level. Includes  Basal Metabolic Rate (BMR) for those periods as well as activity burned calories. Uses only tracker data. Excludes manually logged activities.">
+            >
+            ["id33"] = <
+                text = <"Start time">
+                description = <"Start time of sleep.">
+            >
+            ["id35"] = <
+                text = <"Time in bed">
+                description = <"Total time spent in bed.">
+            >
+            ["id37"] = <
+                text = <"Minutes Asleep">
+                description = <"Minutes spent asleep.">
             >
         >
     >
