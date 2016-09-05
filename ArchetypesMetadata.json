@@ -235,7 +235,7 @@
     "rmType" : "OBSERVATION",
     "name" : "Copernicus",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.copernicus.v1.adls",
-    "sha" : "705987ad33455fb6a9634fb1c1b61d306ccbea06",
+    "sha" : "8278571de032fc6558e177fbf697a538312b860f",
     "languages" : [ "en" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.inhaler_use.v1.0.0",
@@ -264,6 +264,20 @@
     "name" : "fitbitsleep",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.fitbitsleep.v1.adls",
     "sha" : "ddf18377745c8dc7c3e283d01546f66652699292",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.copernicusgeneric.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "CopernicusGeneric",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.copernicusgeneric.v1.adls",
+    "sha" : "d4f973605f60f3455a2eef1de8a9521b16517008",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.fitbitgeneric.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "fitbitgeneric",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.fitbitgeneric.v1.adls",
+    "sha" : "f8d387d417caaa646d2c036bb2026513dd83451d",
     "languages" : [ "en" ]
   } ]
 }
