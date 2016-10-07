@@ -6,11 +6,18 @@ language
 
 description
     lifecycle_state = <"unmanaged">
+    original_author = <
+        ["organization"] = <"CERTH">
+        ["name"] = <"Antonios Voulgaridis">
+    >
     copyright = <"">
     details = <
         ["en"] = <
             language = <[ISO_639-1::en]>
-            purpose = <"">
+            purpose = <"Records data, referring to a person's body measurements, physical activities and sleeping period, obtained from Fitbit.">
+            use = <"Use to record data obtained from Fitbit. Data referring to a person's body measurements, physical activities and sleeping period.">
+            misuse = <"">
+            keywords = <"Fitbit", "Body", "Weight", "BMI", "Calories", "Food", "Activities", "MBR", "Steps", "Floors", "Minutes", "Distance", "Sleep", "Fitbit Tracker">
         >
     >
 
