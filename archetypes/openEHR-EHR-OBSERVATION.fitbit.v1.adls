@@ -28,7 +28,11 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {0..1}     -- Date/Time
+                                }
+                            }
                         }
                         state matches {
                             ITEM_TREE[id5] 
@@ -49,6 +53,10 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Date/Time">
+                description = <"Date and time of measurement.">
             >
         >
     >
