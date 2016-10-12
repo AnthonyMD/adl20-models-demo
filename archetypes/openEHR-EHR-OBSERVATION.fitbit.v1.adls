@@ -22,7 +22,7 @@ description
     >
 
 definition
-    OBSERVATION[id1] occurrences matches {1} matches {    -- fitbit
+    OBSERVATION[id1] occurrences matches {0..1} matches {    -- fitbit
         data matches {
             HISTORY[id2] matches {
                 events matches {
