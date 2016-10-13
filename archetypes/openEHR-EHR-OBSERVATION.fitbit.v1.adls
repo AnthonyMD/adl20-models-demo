@@ -38,7 +38,7 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id9] occurrences matches {1} matches {    -- Value
+                                    ELEMENT[id9] occurrences matches {0..1} matches {    -- Value
                                         value matches {
                                             DV_QUANTITY[id10] matches {
                                                 [units, magnitude, precision] matches {
