@@ -41,9 +41,31 @@ definition
                                     ELEMENT[id9] occurrences matches {1} matches {    -- Value
                                         value matches {
                                             DV_QUANTITY[id10] matches {
-                                                property matches {[at21]}
                                                 [units, magnitude, precision] matches {
                                                     [{"kg"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                            DV_QUANTITY[id11] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m2"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                            DV_QUANTITY[id12] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"cal"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                            DV_COUNT[id13] matches {
+                                                magnitude matches {|>=0|}
+                                            }
+                                            DV_QUANTITY[id14] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"m"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                            DV_QUANTITY[id15] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"min"}, {|>=0.0|}, {|>=0|}]
                                                 }
                                             }
                                         }
@@ -171,10 +193,30 @@ terminology
                 text = <"Mass">
                 description = <"Mass">
             >
+            ["at22"] = <
+                text = <"Mass per Area">
+                description = <"Mass per Area">
+            >
+            ["at23"] = <
+                text = <"Energy">
+                description = <"Energy">
+            >
+            ["at24"] = <
+                text = <"Length">
+                description = <"Length">
+            >
+            ["at25"] = <
+                text = <"Time">
+                description = <"Time">
+            >
         >
     >
     term_bindings = <
         ["openehr"] = <
             ["at21"] = <http://openehr.org/id/124>
+            ["at22"] = <http://openehr.org/id/349>
+            ["at23"] = <http://openehr.org/id/121>
+            ["at24"] = <http://openehr.org/id/122>
+            ["at25"] = <http://openehr.org/id/128>
         >
     >
