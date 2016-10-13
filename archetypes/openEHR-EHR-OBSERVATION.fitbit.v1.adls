@@ -31,6 +31,13 @@ definition
                             ITEM_TREE[id4] matches {
                                 items matches {
                                     ELEMENT[id6] occurrences matches {0..1}     -- Date/Time
+                                    ELEMENT[id7] occurrences matches {0..1} matches {    -- Type of Measurement
+                                        value matches {
+                                            DV_CODED_TEXT[id8] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -57,6 +64,94 @@ terminology
             ["id6"] = <
                 text = <"Date/Time">
                 description = <"Date and time of measurement.">
+            >
+            ["id7"] = <
+                text = <"Type of Measurement">
+                description = <"Type of measurement including body, activity and sleep measurements.">
+            >
+            ["at1"] = <
+                text = <"Weight">
+                description = <"Weight measurement in kgs.">
+            >
+            ["at2"] = <
+                text = <"BMI">
+                description = <"The Body Mass Index (BMI) is defined as the body mass divided by the square of the body height.">
+            >
+            ["at3"] = <
+                text = <"Calories In">
+                description = <"Calories consumed in one day (Food).">
+            >
+            ["at4"] = <
+                text = <"Calories Burned">
+                description = <"Amount of calories burned, inclusive of Basal Metabolic Rate (BMR), according to movement captured by a Fitbit tracker, during a single day.">
+            >
+            ["at5"] = <
+                text = <"Steps">
+                description = <"Number of steps taken during one day's activities.">
+            >
+            ["at6"] = <
+                text = <"Distance">
+                description = <"Distance covered during one day's activities.">
+            >
+            ["at7"] = <
+                text = <"Floors">
+                description = <"Only returned for users who currently or have previously paired a Fitbit device with an altimeter.">
+            >
+            ["at8"] = <
+                text = <"Minutes Sedentary">
+                description = <"Total minutes the person was sitting during one day.">
+            >
+            ["at9"] = <
+                text = <"Minutes Lightly Active">
+                description = <"Total minutes the person was lightly active during one day.">
+            >
+            ["at10"] = <
+                text = <"Minutes Fairly Active">
+                description = <"Total minutes the person was fairly active during one day.">
+            >
+            ["at11"] = <
+                text = <"Minutes Very Active">
+                description = <"Total minutes the person was very active during one day.">
+            >
+            ["at12"] = <
+                text = <"Activity Calories">
+                description = <"Amount of calories burned during the day for periods of time when the user was active above sedentary level. Includes  Basal Metabolic Rate (BMR) for those periods as well as activity burned calories. Uses only tracker data. Excludes manually logged activities.">
+            >
+            ["at13"] = <
+                text = <"Start time">
+                description = <"Start time of sleep.">
+            >
+            ["at14"] = <
+                text = <"Time in bed">
+                description = <"Total time spent in bed.">
+            >
+            ["at15"] = <
+                text = <"Minutes Asleep">
+                description = <"Minutes spent asleep.">
+            >
+            ["at16"] = <
+                text = <"Awakenings Count">
+                description = <"Count of awakenings from sleep.">
+            >
+            ["at17"] = <
+                text = <"Minutes Awake">
+                description = <"Minutes spent in bed while awake.">
+            >
+            ["at18"] = <
+                text = <"Minutes to fall asleep">
+                description = <"Minutes spent in bed until fall asleep.">
+            >
+            ["at19"] = <
+                text = <"Minutes After Wake Up">
+                description = <"Minutes spent in bed after wake up.">
+            >
+            ["at20"] = <
+                text = <"Efficiency">
+                description = <"Sleep efficiency. Calculated as follows: 100 * time asleep / (time asleep + time restless + time awoken during sleep).">
+            >
+            ["ac1"] = <
+                text = <"Type of Measurement">
+                description = <"Type of measurement including body, activity and sleep measurements.">
             >
         >
     >
