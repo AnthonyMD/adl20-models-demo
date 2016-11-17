@@ -284,7 +284,7 @@
     "rmType" : "OBSERVATION",
     "name" : "fitbit",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.fitbit.v1.adls",
-    "sha" : "88b24a362c8d1f6d4ffeaa15e689a1512c46e61f",
+    "sha" : "c59c8b5240056fa3c210590f4b8da5e7f0c954a1",
     "languages" : [ "en" ]
   } ]
 }
