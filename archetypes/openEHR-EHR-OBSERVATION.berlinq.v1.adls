@@ -67,6 +67,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14] occurrences matches {1} matches {    -- Do you snore?
+                                        value matches {
+                                            DV_CODED_TEXT[id15] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -129,6 +136,26 @@ terminology
             ["ac1"] = <
                 text = <"Gender">
                 description = <"The gender of the patient.">
+            >
+            ["id14"] = <
+                text = <"Do you snore?">
+                description = <"Question about the snoring habits of the patient.">
+            >
+            ["at6"] = <
+                text = <"Yes">
+                description = <"Yes, i snore.">
+            >
+            ["at7"] = <
+                text = <"No">
+                description = <"No, i don't snore.">
+            >
+            ["at8"] = <
+                text = <"Don't know">
+                description = <"I don't know whether i snore or not.">
+            >
+            ["ac2"] = <
+                text = <"Snoring">
+                description = <"Snoring habits of the patient.">
             >
         >
     >
