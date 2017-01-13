@@ -116,6 +116,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id28] occurrences matches {1} matches {    -- Have you ever nodded off or fallen asleep while driving a vehicle?
+                                        value matches {
+                                            DV_CODED_TEXT[id29] matches {
+                                                defining_code matches {[ac9]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id30] occurrences matches {1} matches {    -- If yes how often does it occur?
+                                        value matches {
+                                            DV_CODED_TEXT[id31] matches {
+                                                defining_code matches {[ac10]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -330,6 +344,22 @@ terminology
             ["ac8"] = <
                 text = <"Tiredness, fatigue or not normal during the day.">
                 description = <"Feeling of tiredness, fatigue or not normal during the day.">
+            >
+            ["id28"] = <
+                text = <"Have you ever nodded off or fallen asleep while driving a vehicle?">
+                description = <"Nodding off or falling asleep while driving.">
+            >
+            ["ac9"] = <
+                text = <"Occurrence of nodding off or falling asleep while driving.">
+                description = <"Occurrence of nodding off or falling asleep while driving.">
+            >
+            ["id30"] = <
+                text = <"If yes how often does it occur?">
+                description = <"Frequency of nodding off or falling asleep during driving.">
+            >
+            ["ac10"] = <
+                text = <"Frequency of nodding off or falling asleep during driving.">
+                description = <"Frequency of nodding off or falling asleep during driving.">
             >
         >
     >
