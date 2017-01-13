@@ -74,6 +74,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] occurrences matches {1} matches {    -- Your snoring is?
+                                        value matches {
+                                            DV_CODED_TEXT[id17] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -156,6 +163,30 @@ terminology
             ["ac2"] = <
                 text = <"Snoring">
                 description = <"Snoring habits of the patient.">
+            >
+            ["id16"] = <
+                text = <"Your snoring is?">
+                description = <"Question about how loud is the snoring of the patient.">
+            >
+            ["at9"] = <
+                text = <"Slightly louder than breathing.">
+                description = <"Slightly louder than breathing.">
+            >
+            ["at10"] = <
+                text = <"As loud as talking">
+                description = <"As loud as talking">
+            >
+            ["at11"] = <
+                text = <"Louder than talking">
+                description = <"Louder than talking">
+            >
+            ["at12"] = <
+                text = <"Very loud. Can be heard in adjacent rooms.">
+                description = <"Very loud. Can be heard in adjacent rooms.">
+            >
+            ["ac3"] = <
+                text = <"Snoring loudness.">
+                description = <"The loudness of the patient's snoring.">
             >
         >
     >
