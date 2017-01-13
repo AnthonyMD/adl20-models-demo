@@ -1,0 +1,54 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.berlinq.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["organization"] = <"CERTH">
+        ["name"] = <"Antonios Voulgaridis">
+    >
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"Berlin Questionnaire">
+            use = <"Use as a questionnaire to evaluate the patient's sleep in primary care. It will show up when IN36_004 Arden rule is triggered.">
+            misuse = <"">
+            keywords = <"Berlin", "Questionnaire", "Sleep", "ArdenRule", "IN36_004">
+        >
+    >
+
+definition
+    OBSERVATION[id1] occurrences matches {1} matches {    -- BerlinQ
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] 
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"BerlinQ">
+                description = <"BerlinQ">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+        >
+    >
