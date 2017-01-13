@@ -50,6 +50,23 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] occurrences matches {1} matches {    -- Weight
+                                        value matches {
+                                            DV_QUANTITY[id11] matches {
+                                                property matches {[at3]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg"}, {|>=0.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] occurrences matches {1} matches {    -- Gender
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -89,11 +106,36 @@ terminology
                 text = <"Length">
                 description = <"Length">
             >
+            ["id10"] = <
+                text = <"Weight">
+                description = <"The weight of the patient in kg.">
+            >
+            ["at3"] = <
+                text = <"Mass">
+                description = <"Mass">
+            >
+            ["id12"] = <
+                text = <"Gender">
+                description = <"The gender of the patient (male/female)">
+            >
+            ["at4"] = <
+                text = <"Male">
+                description = <"Male patient.">
+            >
+            ["at5"] = <
+                text = <"Female">
+                description = <"Female patient.">
+            >
+            ["ac1"] = <
+                text = <"Gender">
+                description = <"The gender of the patient.">
+            >
         >
     >
     term_bindings = <
         ["openehr"] = <
             ["at1"] = <http://openehr.org/id/128>
             ["at2"] = <http://openehr.org/id/122>
+            ["at3"] = <http://openehr.org/id/124>
         >
     >
