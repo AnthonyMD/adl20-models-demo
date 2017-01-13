@@ -130,6 +130,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id32] occurrences matches {1} matches {    -- Do you have high blood pressure?
+                                        value matches {
+                                            DV_CODED_TEXT[id33] matches {
+                                                defining_code matches {[ac11]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -360,6 +367,14 @@ terminology
             ["ac10"] = <
                 text = <"Frequency of nodding off or falling asleep during driving.">
                 description = <"Frequency of nodding off or falling asleep during driving.">
+            >
+            ["id32"] = <
+                text = <"Do you have high blood pressure?">
+                description = <"Patient's blood pressure standards.">
+            >
+            ["ac11"] = <
+                text = <"Blood pressure standards.">
+                description = <"Check if the patient's blood pressure standards are high.">
             >
         >
     >
