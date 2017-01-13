@@ -95,6 +95,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id22] occurrences matches {1} matches {    -- Has anyone noticed that you quit breathing during your sleep?
+                                        value matches {
+                                            DV_CODED_TEXT[id23] matches {
+                                                defining_code matches {[ac6]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -245,6 +252,34 @@ terminology
             ["ac5"] = <
                 text = <"Patient's snoring bothered other people.">
                 description = <"Patient's snoring bothered other people.">
+            >
+            ["id22"] = <
+                text = <"Has anyone noticed that you quit breathing during your sleep?">
+                description = <"Question about the regularity of the patient's breathing during sleep.">
+            >
+            ["at20"] = <
+                text = <"Nearly every day">
+                description = <"Nearly every day">
+            >
+            ["at21"] = <
+                text = <"3-4 times a week">
+                description = <"3-4 times a week">
+            >
+            ["at22"] = <
+                text = <"1-2 times a week">
+                description = <"1-2 times a week">
+            >
+            ["at23"] = <
+                text = <"1-2 times a month">
+                description = <"1-2 times a month">
+            >
+            ["at24"] = <
+                text = <"Never or nearly never">
+                description = <"Never or nearly never">
+            >
+            ["ac6"] = <
+                text = <"Regularity of breathing during sleep.">
+                description = <"How often does the patient quit breathing during sleep.">
             >
         >
     >
