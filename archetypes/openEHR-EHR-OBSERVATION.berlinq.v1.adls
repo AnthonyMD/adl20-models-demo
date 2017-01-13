@@ -14,7 +14,7 @@ description
     details = <
         ["en"] = <
             language = <[ISO_639-1::en]>
-            purpose = <"Berlin Questionnaire">
+            purpose = <"Berlin Questionnaire.">
             use = <"Use as a questionnaire to evaluate the patient's sleep in primary care. It will show up when IN36_004 Arden rule is triggered.">
             misuse = <"">
             keywords = <"Berlin", "Questionnaire", "Sleep", "ArdenRule", "IN36_004">
@@ -134,6 +134,15 @@ definition
                                         value matches {
                                             DV_CODED_TEXT[id33] matches {
                                                 defining_code matches {[ac11]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id34] occurrences matches {1} matches {    -- BMI
+                                        value matches {
+                                            DV_QUANTITY[id35] matches {
+                                                [units, magnitude, precision] matches {
+                                                    [{"kg/m2"}, {|0.0..<1000.0|}, {|>=0|}]
+                                                }
                                             }
                                         }
                                     }
@@ -376,6 +385,14 @@ terminology
                 text = <"Blood pressure standards.">
                 description = <"Check if the patient's blood pressure standards are high.">
             >
+            ["id34"] = <
+                text = <"BMI">
+                description = <"Body Mass Index">
+            >
+            ["at30"] = <
+                text = <"Mass per Area">
+                description = <"Mass per Area">
+            >
         >
     >
     term_bindings = <
@@ -383,5 +400,6 @@ terminology
             ["at1"] = <http://openehr.org/id/128>
             ["at2"] = <http://openehr.org/id/122>
             ["at3"] = <http://openehr.org/id/124>
+            ["at30"] = <http://openehr.org/id/349>
         >
     >
