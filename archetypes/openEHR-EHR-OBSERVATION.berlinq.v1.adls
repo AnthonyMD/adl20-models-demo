@@ -81,6 +81,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id18] occurrences matches {1} matches {    -- How often do you snore?
+                                        value matches {
+                                            DV_CODED_TEXT[id19] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] occurrences matches {1} matches {    -- Has your snoring ever bothered other people?
+                                        value matches {
+                                            DV_CODED_TEXT[id21] matches {
+                                                defining_code matches {[ac5]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -187,6 +201,50 @@ terminology
             ["ac3"] = <
                 text = <"Snoring loudness.">
                 description = <"The loudness of the patient's snoring.">
+            >
+            ["id18"] = <
+                text = <"How often do you snore?">
+                description = <"Frequency of the patient's snoring.">
+            >
+            ["at13"] = <
+                text = <"Nearly every day">
+                description = <"Nearly every day">
+            >
+            ["ac4"] = <
+                text = <"Snoring Frequency">
+                description = <"Frequency of the patient's snoring.">
+            >
+            ["at14"] = <
+                text = <"3-4 times a week">
+                description = <"3-4 times a week">
+            >
+            ["at15"] = <
+                text = <"1-2 times a week">
+                description = <"1-2 times a week">
+            >
+            ["at16"] = <
+                text = <"1-2 times a month">
+                description = <"1-2 times a month">
+            >
+            ["at17"] = <
+                text = <"Never or nearly never">
+                description = <"Never or nearly never">
+            >
+            ["id20"] = <
+                text = <"Has your snoring ever bothered other people?">
+                description = <"Question about the patient's snoring and if it has ever bothered other people.">
+            >
+            ["at18"] = <
+                text = <"Yes">
+                description = <"Yes">
+            >
+            ["at19"] = <
+                text = <"No">
+                description = <"No">
+            >
+            ["ac5"] = <
+                text = <"Patient's snoring bothered other people.">
+                description = <"Patient's snoring bothered other people.">
             >
         >
     >
