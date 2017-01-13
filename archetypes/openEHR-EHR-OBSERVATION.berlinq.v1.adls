@@ -387,7 +387,7 @@ terminology
             >
             ["id34"] = <
                 text = <"BMI">
-                description = <"Body Mass Index">
+                description = <"Index describing ratio of weight to height.">
             >
             ["at30"] = <
                 text = <"Mass per Area">
