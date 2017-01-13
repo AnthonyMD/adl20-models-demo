@@ -102,6 +102,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id24] occurrences matches {1} matches {    -- How often do you feel tired or fatigued after your sleep?
+                                        value matches {
+                                            DV_CODED_TEXT[id25] matches {
+                                                defining_code matches {[ac7]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id26] occurrences matches {1} matches {    -- During your waketime, do you feel tired, fatigued, or not up to par?
+                                        value matches {
+                                            DV_CODED_TEXT[id27] matches {
+                                                defining_code matches {[ac8]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -280,6 +294,42 @@ terminology
             ["ac6"] = <
                 text = <"Regularity of breathing during sleep.">
                 description = <"How often does the patient quit breathing during sleep.">
+            >
+            ["id24"] = <
+                text = <"How often do you feel tired or fatigued after your sleep?">
+                description = <"Fatigue after sleep.">
+            >
+            ["at25"] = <
+                text = <"Nearly every day">
+                description = <"Nearly every day">
+            >
+            ["at26"] = <
+                text = <"3-4 times a week">
+                description = <"3-4 times a week">
+            >
+            ["at27"] = <
+                text = <"1-2 times a week">
+                description = <"1-2 times a week">
+            >
+            ["at28"] = <
+                text = <"1-2 times a month">
+                description = <"1-2 times a month">
+            >
+            ["at29"] = <
+                text = <"Never or nearly never">
+                description = <"Never or nearly never">
+            >
+            ["ac7"] = <
+                text = <"Effectiveness of sleep.">
+                description = <"Feel of tiredness or fatigue after sleep.">
+            >
+            ["id26"] = <
+                text = <"During your waketime, do you feel tired, fatigued, or not up to par?">
+                description = <"Feel of tiredness and fatigue during the day.">
+            >
+            ["ac8"] = <
+                text = <"Tiredness, fatigue or not normal during the day.">
+                description = <"Feeling of tiredness, fatigue or not normal during the day.">
             >
         >
     >
