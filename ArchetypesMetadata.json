@@ -286,5 +286,12 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.fitbit.v1.adls",
     "sha" : "c59c8b5240056fa3c210590f4b8da5e7f0c954a1",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.berlinq.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "BerlinQ",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.berlinq.v1.adls",
+    "sha" : "9f6669bb89eadc9631a63be0c73c0dc017f7a516",
+    "languages" : [ "en" ]
   } ]
 }
