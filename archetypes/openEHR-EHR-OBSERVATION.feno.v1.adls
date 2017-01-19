@@ -50,7 +50,6 @@ definition
                                     ELEMENT[id10] occurrences matches {1} matches {    -- Increase in FeNO value
                                         value matches {
                                             DV_QUANTITY[id11] matches {
-                                                property matches {[at1]}
                                                 [units, magnitude, precision] matches {
                                                     [{"%"}, {|>=0.0|}, {|>=0|}]
                                                 }
