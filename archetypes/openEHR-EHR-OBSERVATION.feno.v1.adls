@@ -14,7 +14,10 @@ description
     details = <
         ["en"] = <
             language = <[ISO_639-1::en]>
-            purpose = <"">
+            purpose = <"Determining Responsiveness to Anti-inflammatory Therapy.">
+            use = <"Records data referring to FeNO (fractional exhaled nitric oxide).">
+            misuse = <"">
+            keywords = <"FeNO", "Asthma", "inflammation">
         >
     >
 
