@@ -17,7 +17,7 @@ description
             purpose = <"Determining Responsiveness to Anti-inflammatory Therapy.">
             use = <"Records data referring to FeNO (fractional exhaled nitric oxide).">
             misuse = <"">
-            keywords = <"FeNO", "Asthma", "inflammation">
+            keywords = <"FeNO", "Asthma", "inflammation", "nitric oxide", "airway disease", "exhaled breath">
         >
     >
 
