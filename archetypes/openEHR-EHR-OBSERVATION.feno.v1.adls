@@ -47,7 +47,7 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id10] occurrences matches {1} matches {    -- Increase in FeNO value.
+                                    ELEMENT[id10] occurrences matches {1} matches {    -- Increase in FeNO value
                                         value matches {
                                             DV_QUANTITY[id11] matches {
                                                 property matches {[at1]}
@@ -86,14 +86,14 @@ terminology
             >
             ["id8"] = <
                 text = <"FeNO value">
-                description = <"Current FeNO measurement (particles per billion)">
+                description = <"Current FeNO measurement (parts per billion).">
             >
             ["at1"] = <
                 text = <"Proportion">
                 description = <"Proportion">
             >
             ["id10"] = <
-                text = <"Increase in FeNO value.">
+                text = <"Increase in FeNO value">
                 description = <"Increase in FeNO value compared to last measurement.">
             >
         >
