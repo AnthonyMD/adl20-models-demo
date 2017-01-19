@@ -15,7 +15,7 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"Determining Responsiveness to Anti-inflammatory Therapy.">
-            use = <"Records data referring to FeNO (fractional exhaled nitric oxide).">
+            use = <"Records data referring to FeNO (fractional exhaled nitric oxide) obtained from NIOX VERO device.">
             misuse = <"">
             keywords = <"FeNO", "Asthma", "inflammation", "nitric oxide", "airway disease", "exhaled breath">
         >
