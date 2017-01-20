@@ -58,6 +58,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14] occurrences matches {1} matches {    -- Employed
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] occurrences matches {1} matches {    -- Cohabitating
+                                        value matches {
+                                            DV_BOOLEAN[id17] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -140,6 +154,14 @@ terminology
             ["ac3"] = <
                 text = <"Level of education.">
                 description = <"Level of education.">
+            >
+            ["id14"] = <
+                text = <"Employed">
+                description = <"Current employment state.">
+            >
+            ["id16"] = <
+                text = <"Cohabitating">
+                description = <"Living in the same house with other people.">
             >
         >
     >
