@@ -37,6 +37,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] occurrences matches {1} matches {    -- How many portions of milk and dairy foods (yogurt and cheese) do you eat or drink each day?
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -87,6 +94,26 @@ terminology
             ["ac1"] = <
                 text = <"Breakfast frequency per week.">
                 description = <"Breakfast frequency per week.">
+            >
+            ["id8"] = <
+                text = <"How many portions of milk and dairy foods (yogurt and cheese) do you eat or drink each day?">
+                description = <"Portions of milk daily. 1 portion = 200ml semi-skimmed milk or 1 small pot yogurt(125gr) or 30g-40g cheese.">
+            >
+            ["at6"] = <
+                text = <"0-1 portions a day">
+                description = <"0-1 portions a day">
+            >
+            ["at7"] = <
+                text = <"2-3 portions a day">
+                description = <"2-3 portions a day">
+            >
+            ["at8"] = <
+                text = <"4 or more portions a day">
+                description = <"4 or more portions a day">
+            >
+            ["ac2"] = <
+                text = <"Portions of milk and dairy foods per day.">
+                description = <"Portions of milk and dairy foods per day.">
             >
         >
     >
