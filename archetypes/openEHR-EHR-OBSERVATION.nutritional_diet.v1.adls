@@ -79,6 +79,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id20] occurrences matches {1} matches {    -- How often would you eat a takeaway meal?
+                                        value matches {
+                                            DV_CODED_TEXT[id21] matches {
+                                                defining_code matches {[ac8]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -249,6 +256,34 @@ terminology
             ["ac7"] = <
                 text = <"Frequency of high sugar snacks consumption per week.">
                 description = <"Frequency of high sugar snacks consumption per week.">
+            >
+            ["id20"] = <
+                text = <"How often would you eat a takeaway meal?">
+                description = <"Frequency of takeaway meals consumption.">
+            >
+            ["at24"] = <
+                text = <"Rarely">
+                description = <"Rarely">
+            >
+            ["at25"] = <
+                text = <"Once a fortnight">
+                description = <"Once a fortnight">
+            >
+            ["at26"] = <
+                text = <"Once a week">
+                description = <"Once a week">
+            >
+            ["at27"] = <
+                text = <"2-3 time a week">
+                description = <"2-3 time a week">
+            >
+            ["at28"] = <
+                text = <"Every day">
+                description = <"Every day">
+            >
+            ["ac8"] = <
+                text = <"Frequency of takeaway meals consumption.">
+                description = <"Frequency of takeaway meals consumption.">
             >
         >
     >
