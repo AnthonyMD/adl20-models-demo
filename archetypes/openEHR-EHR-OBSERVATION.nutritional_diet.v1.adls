@@ -65,6 +65,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] occurrences matches {1} matches {    -- How many portions from the meat, fish and alternatives, such as eggs, beans and other pulses, do you eat each day?
+                                        value matches {
+                                            DV_CODED_TEXT[id17] matches {
+                                                defining_code matches {[ac6]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -191,6 +198,26 @@ terminology
             ["ac5"] = <
                 text = <"Portions of starchy food per day.">
                 description = <"Portions of starchy food per day.">
+            >
+            ["id16"] = <
+                text = <"How many portions from the meat, fish and alternatives, such as eggs, beans and other pulses, do you eat each day?">
+                description = <"Portions of meat, fish and alternatives per day. 1 portion =  2 eggs OR 7 tablespoons cooked pulses, lentils, dahl or baked beans OR 115g quorn (equivalent to burger/ 2 sausages) 85g-115g/3-4oz chicken (if eaten) OR 115g-140g/4-5oz fish (equivalent to 1medium fillet white fish or a medium sized salmon steak)">
+            >
+            ["at17"] = <
+                text = <"1 portion or less a day">
+                description = <"1 portion or less a day">
+            >
+            ["at18"] = <
+                text = <"2 portions a day">
+                description = <"2 portions a day">
+            >
+            ["at19"] = <
+                text = <"3 or more portions a day">
+                description = <"3 or more portions a day">
+            >
+            ["ac6"] = <
+                text = <"Portions of meat, fish and alternatives per day.">
+                description = <"Portions of meat, fish and alternatives per day.">
             >
         >
     >
