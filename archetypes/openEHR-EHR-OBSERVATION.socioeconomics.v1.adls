@@ -28,7 +28,17 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {1} matches {    -- Age
+                                        value matches {
+                                            DV_COUNT[id7] matches {
+                                                magnitude matches {|>=0|}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         state matches {
                             ITEM_TREE[id5] 
@@ -49,6 +59,10 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Age">
+                description = <"Patient's age in years.">
             >
         >
     >
