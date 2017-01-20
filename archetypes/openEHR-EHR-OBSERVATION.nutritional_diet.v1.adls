@@ -51,6 +51,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] occurrences matches {1} matches {    -- How many portions of fruit and vegetables (excluding potatoes) would you normally eat each day?
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -133,6 +140,26 @@ terminology
             ["ac3"] = <
                 text = <"Frequency of meat related meals per week.">
                 description = <"Frequency of meat related meals per week.">
+            >
+            ["id12"] = <
+                text = <"How many portions of fruit and vegetables (excluding potatoes) would you normally eat each day?">
+                description = <"Portions of fruits and vegetables per day. 1 portion = 1 slice of large fruit, e.g. melon, pineapple OR 1 medium sized fruit, e.g. a pear or a banana OR 2 small fruits, e.g. kiwis, mandarins or plums OR 1 cup of very small fruit e.g. grapes or strawberries OR 1 glass of fruit juice (fruit juice can be counted as only one portion each day) OR tablespoons of cooked vegetables OR 1 dessert bowl of salad.">
+            >
+            ["at10"] = <
+                text = <"0-2 portions a day">
+                description = <"0-2 portions a day">
+            >
+            ["at11"] = <
+                text = <"3-4 portions a day">
+                description = <"3-4 portions a day">
+            >
+            ["at12"] = <
+                text = <"5 or more portions a day">
+                description = <"5 or more portions a day">
+            >
+            ["ac4"] = <
+                text = <"Portions of fruit and vegetables per day.">
+                description = <"Portions of fruit and vegetables per day.">
             >
         >
     >
