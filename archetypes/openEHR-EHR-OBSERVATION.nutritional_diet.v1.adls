@@ -58,6 +58,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14] occurrences matches {1} matches {    -- How many portions of bread, rice, potatoes, pasta and other starchy foods do you eat each day?
+                                        value matches {
+                                            DV_CODED_TEXT[id15] matches {
+                                                defining_code matches {[ac5]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -160,6 +167,30 @@ terminology
             ["ac4"] = <
                 text = <"Portions of fruit and vegetables per day.">
                 description = <"Portions of fruit and vegetables per day.">
+            >
+            ["id14"] = <
+                text = <"How many portions of bread, rice, potatoes, pasta and other starchy foods do you eat each day?">
+                description = <"Portions of starchy food per day. 1 portion = 1 slice of bread/toast OR 3 tablespoons of breakfast cereal or 1 breakfast biscuit of Weetabix, Shredded Wheat OR 1 medium sized boiled potato OR 1/2 medium baked potato OR 2 tablespoons of boiled rice OR 3 tablespoons of cooked pasta.">
+            >
+            ["at13"] = <
+                text = <"Less than 6 portions a day">
+                description = <"Less than 6 portions a day">
+            >
+            ["at14"] = <
+                text = <"6-9 portions a day">
+                description = <"6-9 portions a day">
+            >
+            ["at15"] = <
+                text = <"10-12 portions a day">
+                description = <"10-12 portions a day">
+            >
+            ["at16"] = <
+                text = <"12 or more portions a day">
+                description = <"12 or more portions a day">
+            >
+            ["ac5"] = <
+                text = <"Portions of starchy food per day.">
+                description = <"Portions of starchy food per day.">
             >
         >
     >
