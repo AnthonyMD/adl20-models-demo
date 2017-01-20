@@ -37,6 +37,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] occurrences matches {1} matches {    -- Gender
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -63,6 +70,22 @@ terminology
             ["id6"] = <
                 text = <"Age">
                 description = <"Patient's age in years.">
+            >
+            ["id8"] = <
+                text = <"Gender">
+                description = <"The gender of the patient.">
+            >
+            ["at1"] = <
+                text = <"Male">
+                description = <"Male">
+            >
+            ["at2"] = <
+                text = <"Female">
+                description = <"Female">
+            >
+            ["ac1"] = <
+                text = <"Patient's gender.">
+                description = <"Patient's gender.">
             >
         >
     >
