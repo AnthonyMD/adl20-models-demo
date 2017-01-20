@@ -14,7 +14,10 @@ description
     details = <
         ["en"] = <
             language = <[ISO_639-1::en]>
-            purpose = <"">
+            purpose = <"Records the patient's nutritional habits.">
+            use = <"To depict the nutritional habits of the patient and help the clinician determine the quality of the patient's diet.">
+            misuse = <"">
+            keywords = <"nutritional", "diet", "questionnaire", "asthma">
         >
     >
 
