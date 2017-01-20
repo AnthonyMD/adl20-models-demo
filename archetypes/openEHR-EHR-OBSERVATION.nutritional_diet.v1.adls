@@ -28,7 +28,17 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {1} matches {    -- How many days of the week do you eat breakfast?
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         state matches {
                             ITEM_TREE[id5] 
@@ -49,6 +59,34 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"How many days of the week do you eat breakfast?">
+                description = <"Breakfast frequency.">
+            >
+            ["at1"] = <
+                text = <"Every day">
+                description = <"Every day">
+            >
+            ["at2"] = <
+                text = <"5-6 days a week">
+                description = <"5-6 days a week">
+            >
+            ["at3"] = <
+                text = <"3-4 days a week">
+                description = <"3-4 days a week">
+            >
+            ["at4"] = <
+                text = <"1-2 days a week">
+                description = <"1-2 days a week">
+            >
+            ["at5"] = <
+                text = <"Never">
+                description = <"Never">
+            >
+            ["ac1"] = <
+                text = <"Breakfast frequency per week.">
+                description = <"Breakfast frequency per week.">
             >
         >
     >
