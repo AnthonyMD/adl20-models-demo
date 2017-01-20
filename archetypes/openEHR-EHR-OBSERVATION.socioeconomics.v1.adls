@@ -51,6 +51,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] occurrences matches {1} matches {    -- Education
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -117,6 +124,22 @@ terminology
             ["ac2"] = <
                 text = <"The patient's ethnic group (race).">
                 description = <"The Major Divisions of the Human Race">
+            >
+            ["id12"] = <
+                text = <"Education">
+                description = <"Level of education measured in years.">
+            >
+            ["at7"] = <
+                text = <"Low (< 12 years of education)">
+                description = <"Low (< 12 years of education)">
+            >
+            ["at8"] = <
+                text = <"High ( > 12 years of education)">
+                description = <"High ( > 12 years of education)">
+            >
+            ["ac3"] = <
+                text = <"Level of education.">
+                description = <"Level of education.">
             >
         >
     >
