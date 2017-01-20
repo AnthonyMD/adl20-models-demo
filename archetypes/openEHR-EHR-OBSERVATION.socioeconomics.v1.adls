@@ -44,6 +44,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] occurrences matches {1} matches {    -- Ethnicity
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -86,6 +93,30 @@ terminology
             ["ac1"] = <
                 text = <"Patient's gender.">
                 description = <"Patient's gender.">
+            >
+            ["id10"] = <
+                text = <"Ethnicity">
+                description = <"The ethnic group of the patient.">
+            >
+            ["at3"] = <
+                text = <"Caucasian">
+                description = <"Aryans, Hamites, Semites">
+            >
+            ["at4"] = <
+                text = <"Asian">
+                description = <"Northern Mongolian, Chinese and Indo-Chinese, Japanese and Korean, Tibetan, Malayan, Polynesian, Maori, Micronesian, Eskimo, American Indian">
+            >
+            ["at5"] = <
+                text = <"Black">
+                description = <"African, Hottentots, Melanesians/Papua, “Negrito”, Australian Aborigine, Dravidians, Sinhalese">
+            >
+            ["at6"] = <
+                text = <"Other">
+                description = <"Other">
+            >
+            ["ac2"] = <
+                text = <"The patient's ethnic group (race).">
+                description = <"The Major Divisions of the Human Race">
             >
         >
     >
