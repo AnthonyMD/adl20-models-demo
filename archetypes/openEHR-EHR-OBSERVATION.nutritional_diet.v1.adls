@@ -72,6 +72,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id18] occurrences matches {1} matches {    -- How many high fat, high sugar snacks would you eat in a week such as cakes, biscuits, crisps, chocolate bars, sweets?
+                                        value matches {
+                                            DV_CODED_TEXT[id19] matches {
+                                                defining_code matches {[ac7]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -218,6 +225,30 @@ terminology
             ["ac6"] = <
                 text = <"Portions of meat, fish and alternatives per day.">
                 description = <"Portions of meat, fish and alternatives per day.">
+            >
+            ["id18"] = <
+                text = <"How many high fat, high sugar snacks would you eat in a week such as cakes, biscuits, crisps, chocolate bars, sweets?">
+                description = <"Frequency of high sugar snacks consumption per week.">
+            >
+            ["at20"] = <
+                text = <"Every day">
+                description = <"Every day">
+            >
+            ["at21"] = <
+                text = <"4-5 days a week">
+                description = <"4-5 days a week">
+            >
+            ["at22"] = <
+                text = <"2-3 day a week">
+                description = <"2-3 day a week">
+            >
+            ["at23"] = <
+                text = <"Once a week">
+                description = <"Once a week">
+            >
+            ["ac7"] = <
+                text = <"Frequency of high sugar snacks consumption per week.">
+                description = <"Frequency of high sugar snacks consumption per week.">
             >
         >
     >
