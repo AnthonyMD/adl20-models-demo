@@ -44,6 +44,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] occurrences matches {1} matches {    -- How often do you eat processed meat or chicken products, egg meat pies, pastries, sausages, chicken nuggets each week?
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -114,6 +121,18 @@ terminology
             ["ac2"] = <
                 text = <"Portions of milk and dairy foods per day.">
                 description = <"Portions of milk and dairy foods per day.">
+            >
+            ["id10"] = <
+                text = <"How often do you eat processed meat or chicken products, egg meat pies, pastries, sausages, chicken nuggets each week?">
+                description = <"Frequency of meat related meals.">
+            >
+            ["at9"] = <
+                text = <"Rarely">
+                description = <"Rarely">
+            >
+            ["ac3"] = <
+                text = <"Frequency of meat related meals per week.">
+                description = <"Frequency of meat related meals per week.">
             >
         >
     >
