@@ -14,7 +14,10 @@ description
     details = <
         ["en"] = <
             language = <[ISO_639-1::en]>
-            purpose = <"">
+            purpose = <"Study associations between adult SES (socioeconomic status) and asthma control.">
+            use = <"To find association between education level and asthma control.">
+            misuse = <"">
+            keywords = <"asthma", "questionnaire", "socioeconomic", "education">
         >
     >
 
