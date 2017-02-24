@@ -298,7 +298,21 @@
     "rmType" : "OBSERVATION",
     "name" : "FENO",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.feno.v1.adls",
-    "sha" : "1fa833f3e6a9347295f704bf8dcfa1f1e224767e",
+    "sha" : "3f59362aad4479cc1cc35ed54def288182c149b4",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.nutritional_diet.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Nutritional diet",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.nutritional_diet.v1.adls",
+    "sha" : "4d415629b0cd4164a64cab78e6e99949b6c4e6ce",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.socioeconomics.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Socioeconomics",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.socioeconomics.v1.adls",
+    "sha" : "33dbd4e4ac2efe11ce39f42b6e135a142aa29f98",
     "languages" : [ "en" ]
   } ]
 }
