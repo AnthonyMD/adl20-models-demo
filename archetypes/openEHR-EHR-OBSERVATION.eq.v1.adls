@@ -44,6 +44,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] occurrences matches {1} matches {    -- Usual Activities
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -122,6 +129,34 @@ terminology
             ["ac2"] = <
                 text = <"Self Care">
                 description = <"Today's problem level of self care.">
+            >
+            ["id10"] = <
+                text = <"Usual Activities">
+                description = <"Question referring to today's usual activities (e.g. work, study, housework, family or leisure activities).">
+            >
+            ["at11"] = <
+                text = <"1. I have no problems doing my usual activities.">
+                description = <"I have no problems doing my usual activities">
+            >
+            ["at12"] = <
+                text = <"2. I have slight problems doing my usual activities.">
+                description = <"Level 2">
+            >
+            ["at13"] = <
+                text = <"3. I have moderate problems doing my usual activities.">
+                description = <"Level 3">
+            >
+            ["at14"] = <
+                text = <"4. I have severe problems doing my usual activities">
+                description = <"Level 4">
+            >
+            ["at15"] = <
+                text = <"5. I am unable to do my usual activities">
+                description = <"Level 5">
+            >
+            ["ac3"] = <
+                text = <"Usual Activities">
+                description = <"The problem level of today's usual activities.">
             >
         >
     >
