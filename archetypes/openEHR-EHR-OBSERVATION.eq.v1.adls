@@ -58,6 +58,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14] occurrences matches {1} matches {    -- Anxiety / Depression
+                                        value matches {
+                                            DV_CODED_TEXT[id15] matches {
+                                                defining_code matches {[ac5]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -192,6 +199,34 @@ terminology
             ["ac4"] = <
                 text = <"Pain / Discomfort">
                 description = <"The problem level of today's pain or discomfort.">
+            >
+            ["id14"] = <
+                text = <"Anxiety / Depression">
+                description = <"Question referring to today's Anxiety or Depression levels.">
+            >
+            ["at21"] = <
+                text = <"1. I am not anxious or depressed.">
+                description = <"Level 1">
+            >
+            ["at22"] = <
+                text = <"2. I am slightly anxious or depressed.">
+                description = <"Level 2">
+            >
+            ["at23"] = <
+                text = <"3. I am moderately anxious or depressed.">
+                description = <"Level 3">
+            >
+            ["at24"] = <
+                text = <"4. I am severely anxious or depressed.">
+                description = <"Level 4">
+            >
+            ["at25"] = <
+                text = <"5. I am extremely anxious or depressed.">
+                description = <"Level 5">
+            >
+            ["ac5"] = <
+                text = <"Anxiety / Depression">
+                description = <"The problem level of today's Anxiety or Depression feelings.">
             >
         >
     >
