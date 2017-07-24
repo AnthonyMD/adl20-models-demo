@@ -51,6 +51,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] occurrences matches {1} matches {    -- Pain / Discomfort
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -157,6 +164,34 @@ terminology
             ["ac3"] = <
                 text = <"Usual Activities">
                 description = <"The problem level of today's usual activities.">
+            >
+            ["id12"] = <
+                text = <"Pain / Discomfort">
+                description = <"Question referring to today's level of pain or discomfort.">
+            >
+            ["at16"] = <
+                text = <"1. I have no pain or discomfort.">
+                description = <"Level 1">
+            >
+            ["at17"] = <
+                text = <"2. I have slight pain or discomfort">
+                description = <"Level 2">
+            >
+            ["at18"] = <
+                text = <"3. I have moderate pain or discomfort.">
+                description = <"Level 3">
+            >
+            ["at19"] = <
+                text = <"4. I have severe pain or discomfort.">
+                description = <"Level 4">
+            >
+            ["at20"] = <
+                text = <"5. I have extreme pain or discomfort.">
+                description = <"Level 5">
+            >
+            ["ac4"] = <
+                text = <"Pain / Discomfort">
+                description = <"The problem level of today's pain or discomfort.">
             >
         >
     >
