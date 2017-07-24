@@ -28,7 +28,17 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {1} matches {    -- Mobility
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         state matches {
                             ITEM_TREE[id5] 
@@ -49,6 +59,34 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Mobility">
+                description = <"Question referring to today's walking about.">
+            >
+            ["at1"] = <
+                text = <"1. I have no problems in walking about.">
+                description = <"Level 1">
+            >
+            ["at2"] = <
+                text = <"2. I have slight problems in walking about.">
+                description = <"Level 2">
+            >
+            ["at3"] = <
+                text = <"3. I have moderate problems in walking about">
+                description = <"Level 3">
+            >
+            ["at4"] = <
+                text = <"4. I have severe problems in walking about">
+                description = <"Level 4">
+            >
+            ["at5"] = <
+                text = <"5. I am unable to walk about">
+                description = <"Level 5">
+            >
+            ["ac1"] = <
+                text = <"Mobility">
+                description = <"The problem level of today's walking.">
             >
         >
     >
