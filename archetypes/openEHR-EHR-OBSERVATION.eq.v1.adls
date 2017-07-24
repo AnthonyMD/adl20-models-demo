@@ -65,6 +65,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] occurrences matches {1} matches {    -- Today's Health
+                                        value matches {
+                                            DV_COUNT[id17] matches {
+                                                magnitude matches {|0..100|}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -227,6 +234,10 @@ terminology
             ["ac5"] = <
                 text = <"Anxiety / Depression">
                 description = <"The problem level of today's Anxiety or Depression feelings.">
+            >
+            ["id16"] = <
+                text = <"Today's Health">
+                description = <"How good or bad is your health today (0 to 100).">
             >
         >
     >
