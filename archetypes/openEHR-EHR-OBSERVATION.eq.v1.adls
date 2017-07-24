@@ -37,6 +37,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] occurrences matches {1} matches {    -- Self Care
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -87,6 +94,34 @@ terminology
             ["ac1"] = <
                 text = <"Mobility">
                 description = <"The problem level of today's walking.">
+            >
+            ["id8"] = <
+                text = <"Self Care">
+                description = <"Question referring to today's self care.">
+            >
+            ["at6"] = <
+                text = <"1. I have no problems washing or dressing myself.">
+                description = <"Level 1">
+            >
+            ["at7"] = <
+                text = <"2. I have slight problems washing or dressing myself.">
+                description = <"Level 2">
+            >
+            ["at8"] = <
+                text = <"3. I have moderate problems washing or dressing myself">
+                description = <"Level 3">
+            >
+            ["at9"] = <
+                text = <"4. I have severe problems washing or dressing myself.">
+                description = <"Level 4">
+            >
+            ["at10"] = <
+                text = <"5. I am unable to wash or dress myself.">
+                description = <"Level 5">
+            >
+            ["ac2"] = <
+                text = <"Self Care">
+                description = <"Today's problem level of self care.">
             >
         >
     >
