@@ -1,0 +1,54 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.eq5d5l.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["author"] = <"Antonios Voulgaridis">
+        ["organization"] = <"CERTH">
+    >
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"Indicate the patient's health state.">
+            use = <"EQ-5D is a standardised measure of health status developed by the EuroQol Group in order to provide a simple, generic measure of health for clinical and economic appraisal.">
+            misuse = <"">
+            keywords = <"questionnaire", "health", "mobility", "selfcare", "pain", "discomfort", "anxiety", "depression", "evaluation">
+        >
+    >
+
+definition
+    OBSERVATION[id1] occurrences matches {1} matches {    -- EQ5D5L
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] 
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"EQ5D5L">
+                description = <"EQ5D5L">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+        >
+    >
