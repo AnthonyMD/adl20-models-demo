@@ -44,6 +44,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] occurrences matches {1} matches {    -- Support Information
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -114,6 +121,14 @@ terminology
             ["ac2"] = <
                 text = <"Satisfaction with the amount of time it took to complete the tasks in this scenario.">
                 description = <"Satisfaction with the amount of time it took to complete the tasks in this scenario.">
+            >
+            ["id10"] = <
+                text = <"Support Information">
+                description = <"Satisfaction with the support information (on-line help, messages, documentation) when completing the tasks.">
+            >
+            ["ac3"] = <
+                text = <"Satisfaction with the support information (on-line help, messages, documentation) when completing the tasks.">
+                description = <"Satisfaction with the support information (on-line help, messages, documentation) when completing the tasks.">
             >
         >
     >
