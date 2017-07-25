@@ -37,6 +37,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] occurrences matches {1} matches {    -- Time needed
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -99,6 +106,14 @@ terminology
             ["ac1"] = <
                 text = <"Satisfaction with the ease of completing the tasks in this scenario.">
                 description = <"Satisfaction with the ease of completing the tasks in this scenario.">
+            >
+            ["id8"] = <
+                text = <"Time needed">
+                description = <"Satisfaction with the amount of time it took to complete the tasks in this scenario.">
+            >
+            ["ac2"] = <
+                text = <"Satisfaction with the amount of time it took to complete the tasks in this scenario.">
+                description = <"Satisfaction with the amount of time it took to complete the tasks in this scenario.">
             >
         >
     >
