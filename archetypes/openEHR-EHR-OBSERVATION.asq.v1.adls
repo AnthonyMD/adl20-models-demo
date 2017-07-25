@@ -51,6 +51,11 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] occurrences matches {1} matches {    -- Use Case Scenario Title
+                                        value matches {
+                                            DV_TEXT[id13] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -129,6 +134,10 @@ terminology
             ["ac3"] = <
                 text = <"Satisfaction with the support information (on-line help, messages, documentation) when completing the tasks.">
                 description = <"Satisfaction with the support information (on-line help, messages, documentation) when completing the tasks.">
+            >
+            ["id12"] = <
+                text = <"Use Case Scenario Title">
+                description = <"The specific use case scenario to which the ASQ questionnaire is referring to.">
             >
         >
     >
