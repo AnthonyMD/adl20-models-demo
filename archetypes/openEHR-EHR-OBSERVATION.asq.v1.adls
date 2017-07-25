@@ -28,7 +28,17 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {1} matches {    -- Ease
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         state matches {
                             ITEM_TREE[id5] 
@@ -49,6 +59,46 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Ease">
+                description = <"Satisfaction with the ease of completing the tasks in this scenario.">
+            >
+            ["at1"] = <
+                text = <"1. Strongly Agree">
+                description = <"1. Strongly Agree">
+            >
+            ["at2"] = <
+                text = <"2. Agree">
+                description = <"2. Agree">
+            >
+            ["at3"] = <
+                text = <"3. Agree somewhat">
+                description = <"3. Agree somewhat">
+            >
+            ["at4"] = <
+                text = <"4. Undecided">
+                description = <"4. Undecided">
+            >
+            ["at5"] = <
+                text = <"5. Disagree somewhat">
+                description = <"5. Disagree somewhat">
+            >
+            ["at6"] = <
+                text = <"6. Disagree">
+                description = <"6. Disagree">
+            >
+            ["at7"] = <
+                text = <"7. Strongly Disagree">
+                description = <"7. Strongly Disagree">
+            >
+            ["at8"] = <
+                text = <"0. N/A">
+                description = <"0. N/A">
+            >
+            ["ac1"] = <
+                text = <"Satisfaction with the ease of completing the tasks in this scenario.">
+                description = <"Satisfaction with the ease of completing the tasks in this scenario.">
             >
         >
     >
