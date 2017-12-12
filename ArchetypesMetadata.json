@@ -314,5 +314,26 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.socioeconomics.v1.adls",
     "sha" : "33dbd4e4ac2efe11ce39f42b6e135a142aa29f98",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.asq.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "ASQ",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.asq.v1.adls",
+    "sha" : "ad050943569c4c0d91a4cb9dc3055d8a7352d02d",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.eq.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "eq",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.eq.v1.adls",
+    "sha" : "9c4e58e80b90201b1c5dd6f74e8a8d6be7886fb4",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.eq5d5l.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "EQ5D5L",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.eq5d5l.v1.adls",
+    "sha" : "8faebbf95ba7f3d4292ff58ee0b015185a2614db",
+    "languages" : [ "en" ]
   } ]
 }
