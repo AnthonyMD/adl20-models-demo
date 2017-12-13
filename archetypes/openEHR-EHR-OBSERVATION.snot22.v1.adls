@@ -24,7 +24,17 @@ definition
                             ITEM_TREE[id4] 
                         }
                         state matches {
-                            ITEM_TREE[id5] 
+                            ITEM_TREE[id5] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {0..1} matches {    -- Need to blow nose
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -42,6 +52,38 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Need to blow nose">
+                description = <"Need to blow nose">
+            >
+            ["at1"] = <
+                text = <"0. No problem">
+                description = <"No problem">
+            >
+            ["at2"] = <
+                text = <"1. Very mild problem">
+                description = <"1. Very mild problem">
+            >
+            ["at3"] = <
+                text = <"2. Mild or slight problem">
+                description = <"Mild or slight problem">
+            >
+            ["at4"] = <
+                text = <"3. Moderate problem">
+                description = <"Moderate problem">
+            >
+            ["at5"] = <
+                text = <"4. Severe problem">
+                description = <"Severe problem">
+            >
+            ["at6"] = <
+                text = <"5. Problem as bad as it can be">
+                description = <"Problem as bad as it can be">
+            >
+            ["ac1"] = <
+                text = <"Snot-22 Answers">
+                description = <"Snot-22 Answer-set">
             >
         >
     >
