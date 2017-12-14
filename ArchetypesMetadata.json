@@ -335,5 +335,12 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.eq5d5l.v1.adls",
     "sha" : "8faebbf95ba7f3d4292ff58ee0b015185a2614db",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.snot22.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "SNOT22",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.snot22.v1.adls",
+    "sha" : "13cea6dc6e6a357d610f277fe3cfb91dfac22857",
+    "languages" : [ "en" ]
   } ]
 }
