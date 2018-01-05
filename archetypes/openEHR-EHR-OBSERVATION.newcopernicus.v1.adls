@@ -1,0 +1,87 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.newcopernicus.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    lifecycle_state = <"unmanaged">
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+
+definition
+    OBSERVATION[id1] occurrences matches {1} matches {    -- newcopernicus
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] 
+                        }
+                        state matches {
+                            ITEM_TREE[id5] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {1} matches {    -- Latitude
+                                        value matches {
+                                            DV_QUANTITY[id7] matches {
+                                                property matches {[at1]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"°"}, {|-90.0..90.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] occurrences matches {1} matches {    -- Longitude
+                                        value matches {
+                                            DV_QUANTITY[id9] matches {
+                                                property matches {[at1]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"°"}, {|-180.0..180.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"newcopernicus">
+                description = <"newcopernicus">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Latitude">
+                description = <"Geographic coordinate that specifies the north–south position of a point on the Earth's surface.">
+            >
+            ["at1"] = <
+                text = <"Angle, plane">
+                description = <"Angle, plane">
+            >
+            ["id8"] = <
+                text = <"Longitude">
+                description = <"Geographic coordinate that specifies the east-west position of a point on the Earth's surface.">
+            >
+        >
+    >
+    term_bindings = <
+        ["openehr"] = <
+            ["at1"] = <http://openehr.org/id/497>
+        >
+    >
