@@ -342,5 +342,12 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.snot22.v1.adls",
     "sha" : "13cea6dc6e6a357d610f277fe3cfb91dfac22857",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.newcopernicus.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "newcopernicus",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.newcopernicus.v1.adls",
+    "sha" : "3072593fb3927765c811e98b5a33d1ca3eb81f0a",
+    "languages" : [ "en" ]
   } ]
 }
